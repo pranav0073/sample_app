@@ -116,3 +116,107 @@ Processing PagesController#about (for 127.0.0.1 at 2015-01-24 14:12:52) [GET]
 Rendering template within layouts/application
 Rendering pages/about
 Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-01-24 14:33:37) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-01-24 14:42:16) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://localhost/pages/help]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 14:42:25) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 14:42:30) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 15:08:54) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+
+ActionView::TemplateError (undefined local variable or method `base_title' for #<ActionView::Base:0x5194290>) on line #5 of app/views/layouts/application.html.erb:
+2:   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:   </head>
+7:   <body>
+8:     <%= yield %>
+
+    app/helpers/application_helper.rb:9:in `title'
+    app/views/layouts/application.html.erb:5
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 15:09:15) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+
+ActionView::TemplateError (undefined local variable or method `base_title' for #<ActionView::Base:0x539f160>) on line #5 of app/views/layouts/application.html.erb:
+2:   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+3: <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+4:   <head>
+5:     <title><%= title %></title>
+6:   </head>
+7:   <body>
+8:     <%= yield %>
+
+    app/helpers/application_helper.rb:9:in `title'
+    app/views/layouts/application.html.erb:5
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (35.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 15:10:25) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 15:11:09) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 15:11:20) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/contact]
