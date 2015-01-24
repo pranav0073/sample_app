@@ -110,3 +110,9 @@ Rendering template within layouts/application
 Rendering pages/about
 Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/pages/about]
 >>>>>>> static-pages
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 14:12:52) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/pages/about]
