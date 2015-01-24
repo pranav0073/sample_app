@@ -49,3 +49,34 @@ Completed in 20ms (View: 0, DB: 16) | 200 OK [http://localhost/rails/info/proper
 Processing PagesController#home (for 127.0.0.1 at 2015-01-24 11:18:22) [GET]
 Rendering pages/home
 Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:40:17) [GET]
+Rendering pages/home
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:40:38) [GET]
+Rendering pages/home
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:41:32) [GET]
+Rendering pages/home
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 13:41:58) [GET]
+Rendering pages/contact
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 13:42:48) [GET]
+Rendering pages/about
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 13:51:55) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/pages/about]
