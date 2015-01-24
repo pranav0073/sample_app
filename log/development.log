@@ -1,8 +1,19 @@
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2015-01-24 13:59:23) [GET]
 
 ActionController::RoutingError (No route matches "/pages/about" with {:method=>:get}):
+=======
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 00:04:12) [GET]
+Rendering pages/home
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#homed (for 127.0.0.1 at 2015-01-24 00:04:21) [GET]
+
+ActionController::UnknownAction (No action responded to homed. Actions: contact and home):
+>>>>>>> static-pages
   C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
   C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
   C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
@@ -17,6 +28,7 @@ ActionController::RoutingError (No route matches "/pages/about" with {:method=>:
 Rendering rescues/layout (not_found)
 
 
+<<<<<<< HEAD
 Processing ApplicationController#index (for 127.0.0.1 at 2015-01-24 14:00:12) [GET]
 
 ActionController::RoutingError (No route matches "/pages/about" with {:method=>:get}):
@@ -32,3 +44,69 @@ ActionController::RoutingError (No route matches "/pages/about" with {:method=>:
   C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
 
 Rendering rescues/layout (not_found)
+=======
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2015-01-24 11:17:21) [GET]
+  [4;36;1mSQL (31.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 188ms (View: 16, DB: 31) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2015-01-24 11:17:21) [GET]
+  [4;35;1mSQL (4.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 64ms (View: 4, DB: 4) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing Rails::InfoController#properties (for 127.0.0.1 at 2015-01-24 11:17:29) [GET]
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Completed in 20ms (View: 0, DB: 16) | 200 OK [http://localhost/rails/info/properties]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 11:18:22) [GET]
+Rendering pages/home
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:40:17) [GET]
+Rendering pages/home
+Completed in 12ms (View: 9, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:40:38) [GET]
+Rendering pages/home
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-24 13:41:32) [GET]
+Rendering pages/home
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/home]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-24 13:41:58) [GET]
+Rendering pages/contact
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/pages/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 13:42:48) [GET]
+Rendering pages/about
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 13:51:55) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/pages/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-24 13:55:54) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Completed in 13ms (View: 12, DB: 0) | 200 OK [http://localhost/pages/about]
+>>>>>>> static-pages
