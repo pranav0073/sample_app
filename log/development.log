@@ -1790,3 +1790,554 @@ Rendered layouts/_stylesheets (1.0ms)
 Rendered layouts/_header (1.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:19:17) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 62ms (View: 60, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:19:19) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 00:19:21) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:19:23) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-01-25 00:19:23) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:19:25) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:19:37) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:20:09) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 00:20:18) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 13ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:21:59) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 76ms (View: 74, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:22:14) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:22:15) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-25 10:22:17) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 10:22:18) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 14, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-25 10:22:20) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:22:28) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 10:22:29) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:22:33) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#help (for 127.0.0.1 at 2015-01-25 10:30:52) [GET]
+Rendering template within layouts/application
+Rendering pages/help
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/help]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:30:53) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 10:30:54) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:30:56) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 10:43:03) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (15.6ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 10:43:06) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (0.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (15.7ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (93.8ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20150125052446')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (4.0ms)[0m   [0mPRAGMA index_list("users")[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20150125052446'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20150125052446')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("email", "created_at", "name", "updated_at") VALUES('pranav0073@gmail.com', '2015-01-25 05:51:00', 'Pranav Prashant', '2015-01-25 05:51:00')[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 7) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (102.1ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (62.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (46.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (71.5ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20150125052446')[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("name", "created_at", "updated_at", "email") VALUES('Pranav Prashant', '2015-01-25 06:43:50', '2015-01-25 06:43:50', 'pranav0073@gmail.com')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+Migrating to AddEmailUniquenessIndex (20150125094902)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20150125094902')[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 15:26:47) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 97ms (View: 92, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 15:26:47) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 15:26:53) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 33ms (View: 29, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 15:26:56) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 20ms (View: 15, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 15:26:58) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 27ms (View: 22, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 15:32:05) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (29.0ms)
+Rendered layouts/_footer (3.0ms)
+Completed in 77ms (View: 75, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 15:32:07) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 15:32:09) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#about (for 127.0.0.1 at 2015-01-25 15:32:12) [GET]
+Rendering template within layouts/application
+Rendering pages/about
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/about]
+
+
+Processing PagesController#contact (for 127.0.0.1 at 2015-01-25 15:32:14) [GET]
+Rendering template within layouts/application
+Rendering pages/contact
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 17ms (View: 14, DB: 0) | 200 OK [http://localhost/contact]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-25 15:32:15) [GET]
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 22ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-25 15:32:18) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 31ms (View: 27, DB: 0) | 200 OK [http://localhost/signup]
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+Migrating to AddEmailUniquenessIndex (20150125094902)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO "users" ("created_at", "updated_at", "email", "name") VALUES('2015-01-25 10:09:41', '2015-01-25 10:09:41', 'pranav0073@gmail.com', 'Pranav Prashant')[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 15:43:35) [GET]
+Rendering template within layouts/application
+Rendering users/show
+
+ActionView::TemplateError (undefined method `name' for nil:NilClass) on line #1 of app/views/users/show.html.erb:
+1: <%= @user.name%>, <%= @user.email%>
+
+    app/views/users/show.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (85.1ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 15:48:14) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find User without an ID):
+  app/controllers/users_controller.rb:7:in `show'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (67.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 15:49:34) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (29.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 70ms (View: 57, DB: 0) | 200 OK [http://localhost/users/show/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 16:05:20) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 20ms (View: 11, DB: 1) | 200 OK [http://localhost/users/show/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 16:05:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (3.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 20ms (View: 12, DB: 1) | 200 OK [http://localhost/users/1]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-25 16:05:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 6, DB: 0) | 200 OK [http://localhost/users/1]
