@@ -5018,3 +5018,774 @@ Rendered layouts/_stylesheets (1.0ms)
 Rendered layouts/_header (5.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 27ms (View: 11, DB: 0) | 200 OK [http://localhost/users/11]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 10:46:19) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '93778222c1495f72ae5883f1da7a4135ff46cd586f742f4636fd5afb2760b7c9') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '93778222c1495f72ae5883f1da7a4135ff46cd586f742f4636fd5afb2760b7c9') LIMIT 1[0m
+Rendered layouts/_header (48.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 151ms (View: 149, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 10:46:21) [GET]
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '93778222c1495f72ae5883f1da7a4135ff46cd586f742f4636fd5afb2760b7c9') LIMIT 1[0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '93778222c1495f72ae5883f1da7a4135ff46cd586f742f4636fd5afb2760b7c9') LIMIT 1[0m
+Rendered layouts/_header (20.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 40ms (View: 37, DB: 1) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 10:46:23) [POST]
+  Parameters: {"action"=>"create", "session"=>{"email"=>"pranav0073@gmail.com", "password"=>"[FILTERED]"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "commit"=>"Sign in", "controller"=>"sessions"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (151.0ms)[0m   [0mUPDATE "users" SET "updated_at" = '2015-01-29 05:16:23', "remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/users/10
+Completed in 374ms (DB: 151) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 10:46:24) [GET]
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"users"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 77ms (View: 24, DB: 0) | 200 OK [http://localhost/users/10]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 10:46:26) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 32ms (View: 28, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 10:46:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"10", "controller"=>"users"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 14, DB: 1) | 200 OK [http://localhost/users/10]
+
+
+Processing UsersController#edit (for 127.0.0.1 at 2015-01-29 10:46:29) [GET]
+  Parameters: {"action"=>"edit", "id"=>"10", "controller"=>"users"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/edit
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 43ms (View: 21, DB: 1) | 200 OK [http://localhost/users/10/edit]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 10:46:30) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 31ms (View: 29, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20150125052446)
+Migrating to AddEmailUniquenessIndex (20150125094902)
+Migrating to AddPasswordToUsers (20150125123708)
+Migrating to AddSaltToUsers (20150125135912)
+Migrating to AddRememberTokenToSers (20150128054723)
+Migrating to CreatePhonebooks (20150129051902)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "phonebooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20150129051902')[0m
+Migrating to AddUserIdToPhonebook (20150129052009)
+  [4;35;1mSQL (14.0ms)[0m   [0mALTER TABLE "phonebooks" ADD "user_id" varchar(255)[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mALTER TABLE "phonebooks" ADD "name" varchar(255)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20150129052009')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("phonebooks")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_info('index_users_on_remember_token')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mPRAGMA index_info('index_users_on_email')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (117.0ms)[0m   [0;1mCREATE TABLE "phonebooks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "user_id" varchar(255), "name" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (119.0ms)[0m   [0;1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "encrypted_password" varchar(255), "salt" varchar(255), "remember_token" varchar(255)) [0m
+  [4;35;1mSQL (129.0ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (89.0ms)[0m   [0;1mCREATE INDEX "index_users_on_remember_token" ON "users" ("remember_token")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (122.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (88.0ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (111.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20150129052009')[0m
+  [4;35;1mSQL (149.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20150125052446')[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20150125094902')[0m
+  [4;35;1mSQL (75.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20150125123708')[0m
+  [4;36;1mSQL (75.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20150125135912')[0m
+  [4;35;1mSQL (83.0ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20150128054723')[0m
+  [4;36;1mSQL (82.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20150129051902')[0m
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:02:39) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (133.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 227ms (View: 225, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:02:46) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 52ms (View: 21, DB: 1) | 200 OK [http://localhost/phonebooks]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-01-29 11:02:58) [GET]
+  Parameters: {"id"=>"1", "controller"=>"phonebooks", "action"=>"show"}
+
+NameError (undefined local variable or method `phonebook' for #<PhonebooksController:0xbde68e0>):
+  app/controllers/phonebooks_controller.rb:7:in `show'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-01-29 11:03:39) [GET]
+  Parameters: {"id"=>"1", "controller"=>"phonebooks", "action"=>"show"}
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks"."id" = '1') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+Rendered layouts/_header (21.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 40ms (View: 31, DB: 0) | 200 OK [http://localhost/phonebooks/1]
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+  [4;36;1mPhonebook Create (2.0ms)[0m   [0;1mINSERT INTO "phonebooks" ("created_at", "name", "updated_at", "user_id") VALUES('2015-01-29 05:42:06', 'pranav''s Phonebook', '2015-01-29 05:42:06', 10)[0m
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:14:30) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '297928b92daff61998898146ba81b79ae2e033906cbe14e264692e0760c2af79') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 160ms (View: 40, DB: 1) | 200 OK [http://localhost/phonebooks]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-01-29 11:14:40) [DELETE]
+  Parameters: {"_method"=>"delete", "controller"=>"sessions", "action"=>"destroy", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+Redirected to http://localhost:3000/
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:14:40) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 25ms (View: 23, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:14:47) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+
+NoMethodError (undefined method `phonebook' for nil:NilClass):
+  app/controllers/phonebooks_controller.rb:3:in `index'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (96.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 11:14:59) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:15:01) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"pranav0073@gmail.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (97.0ms)[0m   [0mUPDATE "users" SET "remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac', "updated_at" = '2015-01-29 05:45:01' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/users/10
+Completed in 329ms (DB: 98) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:15:01) [GET]
+  Parameters: {"id"=>"10", "controller"=>"users", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 44ms (View: 22, DB: 0) | 200 OK [http://localhost/users/10]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:15:08) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 40ms (View: 11, DB: 1) | 200 OK [http://localhost/phonebooks]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:15:41) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 37ms (View: 13, DB: 1) | 200 OK [http://localhost/phonebooks]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:15:58) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 44ms (View: 17, DB: 0) | 200 OK [http://localhost/phonebooks]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:16:14) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 42ms (View: 14, DB: 1) | 200 OK [http://localhost/phonebooks]
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 2) [0m
+  [4;36;1mUser Load (2.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 11) [0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 11) LIMIT 1[0m
+  [4;36;1mPhonebook Create (2.0ms)[0m   [0;1mINSERT INTO "phonebooks" ("created_at", "name", "updated_at", "user_id") VALUES('2015-01-29 05:50:06', 'Abhinav Sharma''s Phonebook', '2015-01-29 05:50:06', 11)[0m
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:20:35) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '17b26835a6b9e8aefe8b04482eb44aba36076dcb2b61838465d8986ed0f1c8ac') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 43ms (View: 13, DB: 0) | 200 OK [http://localhost/phonebooks]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-01-29 11:20:38) [DELETE]
+  Parameters: {"_method"=>"delete", "controller"=>"sessions", "action"=>"destroy", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+Redirected to http://localhost:3000/
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:20:38) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 11:20:39) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 15ms (View: 13, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:20:44) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"sharma.abhinav@akamai.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'sharma.abhinav@akamai.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 39ms (View: 14, DB: 1) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:21:03) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"sharma.abhinav@akamai.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'sharma.abhinav@akamai.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 34ms (View: 12, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:21:24) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"sharma.abhinav@akamai.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'sharma.abhinav@akamai.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 34ms (View: 12, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:21:41) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"sharma.abhinav@akamai.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'sharma.abhinav@akamai.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 12, DB: 1) | 200 OK [http://localhost/sessions]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:21:44) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 11:21:45) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:21:57) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"sharma.abhinav@akamai.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'sharma.abhinav@akamai.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 69ms (View: 44, DB: 0) | 200 OK [http://localhost/sessions]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:22:01) [POST]
+  Parameters: {"commit"=>"Sign in", "controller"=>"sessions", "action"=>"create", "session"=>{"password"=>"[FILTERED]", "email"=>"pranav0073@gmail.com"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."email" = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;36;1mUser Update (221.0ms)[0m   [0;1mUPDATE "users" SET "remember_token" = 'cca90f20268b11038091d39f9171af82892e4f2f157a27cf9387695f4abfd42f', "updated_at" = '2015-01-29 05:52:01' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/users/10
+Completed in 252ms (DB: 221) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:22:01) [GET]
+  Parameters: {"id"=>"10", "controller"=>"users", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'cca90f20268b11038091d39f9171af82892e4f2f157a27cf9387695f4abfd42f') LIMIT 1[0m
+Rendered layouts/_header (7.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 42ms (View: 15, DB: 0) | 200 OK [http://localhost/users/10]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:22:06) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'cca90f20268b11038091d39f9171af82892e4f2f157a27cf9387695f4abfd42f') LIMIT 1[0m
+Rendered layouts/_header (23.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 34ms (View: 30, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-01-29 11:22:11) [DELETE]
+  Parameters: {"_method"=>"delete", "controller"=>"sessions", "action"=>"destroy", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:22:11) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-01-29 11:22:12) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (0.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 70ms (View: 20, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-01-29 11:22:41) [POST]
+  Parameters: {"commit"=>"Sign up", "user"=>{"password"=>"[FILTERED]", "name"=>"Abhinav Sharma", "password_confirmation"=>"[FILTERED]", "email"=>"sharma@yahoo.in"}, "controller"=>"users", "action"=>"create", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI="}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = 'sharma@yahoo.in') LIMIT 1[0m
+  [4;35;1mUser Create (1.0ms)[0m   [0mINSERT INTO "users" ("salt", "name", "created_at", "updated_at", "encrypted_password", "remember_token", "email") VALUES('bb9ef73f3ebbec4d347ca622347cebc56e5738e3b7d9a7498c43c6b20cc3509e', 'Abhinav Sharma', '2015-01-29 05:52:41', '2015-01-29 05:52:41', 'cf24fab150b6ebb731bb5102d7107866c64668907d01565ab388d112c63ebefd', NULL, 'sharma@yahoo.in')[0m
+  [4;36;1mUser Update (107.0ms)[0m   [0;1mUPDATE "users" SET "remember_token" = '40389d27ddee06d5516a0411a78fa0a699e88e925cc98d5e1061ac6bb046663d', "updated_at" = '2015-01-29 05:52:41' WHERE "id" = 12[0m
+Redirected to http://localhost:3000/users/12
+Completed in 314ms (DB: 108) | 302 Found [http://localhost/users]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:22:41) [GET]
+  Parameters: {"id"=>"12", "controller"=>"users", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '40389d27ddee06d5516a0411a78fa0a699e88e925cc98d5e1061ac6bb046663d') LIMIT 1[0m
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 75ms (View: 14, DB: 1) | 200 OK [http://localhost/users/12]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:24:24) [GET]
+  Parameters: {"controller"=>"users", "id"=>"12", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 12) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '40389d27ddee06d5516a0411a78fa0a699e88e925cc98d5e1061ac6bb046663d') LIMIT 1[0m
+Rendered layouts/_header (32.0ms)
+Rendered layouts/_footer (2.0ms)
+Completed in 203ms (View: 112, DB: 1) | 200 OK [http://localhost/users/12]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:24:34) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '40389d27ddee06d5516a0411a78fa0a699e88e925cc98d5e1061ac6bb046663d') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 12) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/phonebooks/index.html.erb:
+1: <h1><%= @phonebook[:name].upcase%></h1>
+2: 
+3: <p>Find me in app/views/phonebooks/index.html.erb</p>
+
+    app/views/phonebooks/index.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (88.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:24:34) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '40389d27ddee06d5516a0411a78fa0a699e88e925cc98d5e1061ac6bb046663d') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 12) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+
+ActionView::TemplateError (You have a nil object when you didn't expect it!
+You might have expected an instance of ActiveRecord::Base.
+The error occurred while evaluating nil.[]) on line #1 of app/views/phonebooks/index.html.erb:
+1: <h1><%= @phonebook[:name].upcase%></h1>
+2: 
+3: <p>Find me in app/views/phonebooks/index.html.erb</p>
+
+    app/views/phonebooks/index.html.erb:1
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-01-29 11:24:56) [DELETE]
+  Parameters: {"controller"=>"sessions", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "action"=>"destroy", "_method"=>"delete"}
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:24:56) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 18ms (View: 16, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 11:24:58) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 20ms (View: 18, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:25:00) [POST]
+  Parameters: {"controller"=>"sessions", "session"=>{"email"=>"pranav0073@gmail.com", "password"=>"[FILTERED]"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "commit"=>"Sign in", "action"=>"create"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (0.0ms)[0m   [0mSQLite3::BusyException: database is locked: UPDATE "users" SET "remember_token" = '9377053ad629a046444a9775e2e41162068647b2f9eb65a53f8ce7f4919fb8a7', "updated_at" = '2015-01-29 05:55:00' WHERE "id" = 10[0m
+
+ActiveRecord::StatementInvalid (SQLite3::BusyException: database is locked: UPDATE "users" SET "remember_token" = '9377053ad629a046444a9775e2e41162068647b2f9eb65a53f8ce7f4919fb8a7', "updated_at" = '2015-01-29 05:55:00' WHERE "id" = 10):
+  app/models/user.rb:41:in `remember_me!'
+  app/helpers/sessions_helper.rb:3:in `sign_in'
+  app/controllers/sessions_controller.rb:14:in `create'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:25:18) [POST]
+  Parameters: {"controller"=>"sessions", "session"=>{"email"=>"pranav0073@gmail.com", "password"=>"[FILTERED]"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "commit"=>"Sign in", "action"=>"create"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'pranav0073@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Update (94.0ms)[0m   [0mUPDATE "users" SET "remember_token" = '212890c33290e81cfdc67da874c9d6a41d8e1cf6c8b41bbe654663a29f48cfc0', "updated_at" = '2015-01-29 05:55:18' WHERE "id" = 10[0m
+Redirected to http://localhost:3000/users/10
+Completed in 339ms (DB: 94) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:25:18) [GET]
+  Parameters: {"controller"=>"users", "id"=>"10", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 10) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '212890c33290e81cfdc67da874c9d6a41d8e1cf6c8b41bbe654663a29f48cfc0') LIMIT 1[0m
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 33ms (View: 13, DB: 0) | 200 OK [http://localhost/users/10]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:25:24) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '212890c33290e81cfdc67da874c9d6a41d8e1cf6c8b41bbe654663a29f48cfc0') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 37ms (View: 10, DB: 0) | 200 OK [http://localhost/phonebooks]
+
+
+Processing SessionsController#destroy (for 127.0.0.1 at 2015-01-29 11:25:29) [DELETE]
+  Parameters: {"controller"=>"sessions", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "action"=>"destroy", "_method"=>"delete"}
+Redirected to http://localhost:3000/
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/signout]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-29 11:25:29) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2015-01-29 11:25:32) [GET]
+  Parameters: {"controller"=>"sessions", "action"=>"new"}
+Rendering template within layouts/application
+Rendering sessions/new
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (1.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/signin]
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2015-01-29 11:25:52) [POST]
+  Parameters: {"controller"=>"sessions", "session"=>{"email"=>"sharma@yahoo.in", "password"=>"[FILTERED]"}, "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "commit"=>"Sign in", "action"=>"create"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."email" = 'sharma@yahoo.in') LIMIT 1[0m
+  [4;35;1mUser Update (91.0ms)[0m   [0mUPDATE "users" SET "remember_token" = '663e385344624285e0f4c4d44dc3422cefc76eaa0f21fc6767b44609a595d93e', "updated_at" = '2015-01-29 05:55:52' WHERE "id" = 11[0m
+Redirected to http://localhost:3000/users/11
+Completed in 119ms (DB: 92) | 302 Found [http://localhost/sessions]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-01-29 11:25:52) [GET]
+  Parameters: {"controller"=>"users", "id"=>"11", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 11) [0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '663e385344624285e0f4c4d44dc3422cefc76eaa0f21fc6767b44609a595d93e') LIMIT 1[0m
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 36ms (View: 12, DB: 1) | 200 OK [http://localhost/users/11]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2015-01-29 11:26:02) [GET]
+
+ActionController::RoutingError (No route matches "/contacts" with {:method=>:get}):
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-29 11:26:07) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '663e385344624285e0f4c4d44dc3422cefc76eaa0f21fc6767b44609a595d93e') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 11) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 10, DB: 1) | 200 OK [http://localhost/phonebooks]
