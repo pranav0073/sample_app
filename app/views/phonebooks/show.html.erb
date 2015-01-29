@@ -1,2 +1,20 @@
-<h1>Phonebooks#show</h1>
-<p>Find me in app/views/phonebooks/show.html.erb</p>
+<h1><%= @contact[:name]%></h1>
+<p>Mobile/Extensions</p>
+<p>
+	<ul>
+		<% mobiles = @contact.mobiles%>
+		<% mobiles.each do |mobile|%>
+		<li><%= mobile.details%></li>
+		<% end %>
+	</ul>
+</p>
+
+<p>Emails</p>
+<p>
+	<ul>
+		<% emails = @contact.emails%>
+		<% emails.each do |email|%>
+		<li><%= email.address%></li>
+		<% end %>
+	</ul>
+</p>

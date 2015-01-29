@@ -1,0 +1,22 @@
+<h1>Contacts#new</h1>
+<p>Find me in app/views/contacts/new.html.erb</p>
+<h1>Create a new Contact</h1>
+<h2>Sign up</h2>
+<% form_for(@contact) do |f| %>
+	<%= f.error_messages %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :details%><br />
+    <%= f.text_field :mobiles%>
+  </div>
+  <div class="field">
+    <%= f.label :emails %><br />
+    <%= f.text_field :emails %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Add Contact" %>
+  </div>
+<% end %>

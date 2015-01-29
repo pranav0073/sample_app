@@ -1,3 +1,9 @@
 <h1><%= @phonebook[:name].upcase%></h1>
+	<ul>
+		<% @contacts.each do |contact|%>
+		<li><%= link_to("#{contact[:name]}", "phonebooks/#{contact[:id]}")%></li>
 
-<p>Find me in app/views/phonebooks/index.html.erb</p>
+
+		<% end %>
+	</ul>
+

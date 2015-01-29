@@ -8,7 +8,8 @@
     </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= h @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>URL</strong>  <%= link_to user_path(@user), @user %></br>
+      <strong><%= link_to "My Contacts", phonebook_path%></strong>
     </td>
   </tr>
 </table>

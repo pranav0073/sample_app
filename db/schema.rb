@@ -9,7 +9,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150129052009) do
+ActiveRecord::Schema.define(:version => 20150129075846) do
+
+  create_table "contacts", :force => true do |t|
+    t.string   "name"
+    t.string   "phonebook_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "emails", :force => true do |t|
+    t.string   "address"
+    t.string   "contact_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mobiles", :force => true do |t|
+    t.string   "details"
+    t.integer  "type"
+    t.string   "contact_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "phonebooks", :force => true do |t|
     t.datetime "created_at"

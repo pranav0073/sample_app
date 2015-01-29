@@ -9,6 +9,7 @@ class UsersController < ApplicationController
 
   def show
   	@user = User.find(params[:id ])
+    @phnbk = current_user.phonebook
   	@title = @user.name
   end
 

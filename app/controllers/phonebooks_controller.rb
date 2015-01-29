@@ -1,10 +1,19 @@
 class PhonebooksController < ApplicationController
   def index
   	@phonebook = current_user.phonebook
+  	@contacts = @phonebook.contacts
   end
 
   def show
-  	@phonebook = Phonebook.find_by_id(params[:id])
+  	@phonebook = current_user.phonebook
+  	@contact = @phonebook.contacts.find_by_id(params[:id])
+  end
+
+  def create
+  end
+
+  def new
+  	redirect_to new_contact_path
   end
 
 end
