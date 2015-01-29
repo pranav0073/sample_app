@@ -1,7 +1,6 @@
-<h1>Contacts#new</h1>
-<p>Find me in app/views/contacts/new.html.erb</p>
+
 <h1>Create a new Contact</h1>
-<h2>Sign up</h2>
+<h2>Add details</h2>
 <% form_for(@contact) do |f| %>
 	<%= f.error_messages %>
   <div class="field">
@@ -9,7 +8,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :details%><br />
+    <%= f.label :mobile%><br />
     <%= f.text_field :mobiles%>
   </div>
   <div class="field">
