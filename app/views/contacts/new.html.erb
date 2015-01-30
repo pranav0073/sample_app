@@ -7,16 +7,36 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <div class="field">
-    <%= f.label :mobile%><br />
-    <%= f.text_field :mobiles%>
+  <%= f.label :mobiles %><br />
+  <div class="fields">
+  	
+    <% f.fields_for :mobiles do |ff| %>
+  		<div class ="field">
+    		<%= ff.select :mtype,options_for_select([["HOME", "H"], ["WORK", "W"],["OTHER", "O"]])%>
+   	 		<%= ff.text_field :details %>
+   	 		<%= link_to_remove_fields "remove", ff%>
+   	 		</br>
+  		</div>
+
+  	<% end %>
+      <%= link_to_add_fields "Add more", f, :mobiles%>
+  	
+
   </div>
-  <div class="field">
+  <div class="fields">
     <%= f.label :emails %><br />
-    <%= f.text_field :emails %>
+    <% f.fields_for :emails do |fff| %>
+  		<div class ="fields">
+   	 		<%= fff.text_field :address %>
+   	 		<%= fff.hidden_field :_destroy %>
+   	 		<%= link_to_remove_fields "remove", fff%>
+   	 		</br>
+  		</div>
+  	<% end %>
   </div>
   <div class="actions">
     <%= f.submit "Add Contact" %>
   </div>
 <% end %>
+<%= javascript_include_tag "custom"%>
 
