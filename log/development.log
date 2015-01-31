@@ -21099,3 +21099,71 @@ Rendered layouts/_stylesheets (2.0ms)
 Rendered layouts/_header (4.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 72ms (View: 34, DB: 2) | 200 OK [http://localhost/phonebooks/27]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-01-31 14:12:47) [GET]
+  Parameters: {"action"=>"home", "controller"=>"pages"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (4.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '779d84ef5d002fb83cb29a1367585adff45f3dd36050b7f26933c164f07661e3') LIMIT 1[0m
+Rendered layouts/_header (226.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 464ms (View: 461, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PhonebooksController#new (for 127.0.0.1 at 2015-01-31 14:12:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"phonebooks"}
+Redirected to http://localhost:3000/contacts/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/add]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2015-01-31 14:12:56) [GET]
+  Parameters: {"action"=>"new", "controller"=>"contacts"}
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered contacts/_mobile_fields (3.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '779d84ef5d002fb83cb29a1367585adff45f3dd36050b7f26933c164f07661e3') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 172ms (View: 102, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#create (for 127.0.0.1 at 2015-01-31 14:13:24) [POST]
+  Parameters: {"action"=>"create", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "commit"=>"Add Contact", "controller"=>"contacts", "contact"=>{"name"=>"asd", "emails_attributes"=>{"0"=>{"_destroy"=>"", "address"=>"asd"}, "1"=>{"_destroy"=>"1", "address"=>""}, "2"=>{"_destroy"=>"1", "address"=>""}}, "mobiles_attributes"=>{"0"=>{"details"=>"sad", "_destroy"=>"", "mtype"=>"H"}}}}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '779d84ef5d002fb83cb29a1367585adff45f3dd36050b7f26933c164f07661e3') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+  [4;36;1mContact Create (1.0ms)[0m   [0;1mINSERT INTO "contacts" ("name", "created_at", "updated_at", "phonebook_id") VALUES('asd', '2015-01-31 08:43:24', '2015-01-31 08:43:24', 1)[0m
+  [4;35;1mMobile Create (0.0ms)[0m   [0mINSERT INTO "mobiles" ("details", "mtype", "contact_id", "created_at", "updated_at") VALUES('sad', 'H', 28, '2015-01-31 08:43:24', '2015-01-31 08:43:24')[0m
+  [4;36;1mEmail Create (0.0ms)[0m   [0;1mINSERT INTO "emails" ("contact_id", "address", "created_at", "updated_at") VALUES(28, 'asd', '2015-01-31 08:43:24', '2015-01-31 08:43:24')[0m
+Redirected to http://localhost:3000/myphonebook
+Completed in 142ms (DB: 1) | 302 Found [http://localhost/contacts]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-01-31 14:13:24) [GET]
+  Parameters: {"action"=>"index", "controller"=>"phonebooks"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = '779d84ef5d002fb83cb29a1367585adff45f3dd36050b7f26933c164f07661e3') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".phonebook_id = 1) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 79ms (View: 45, DB: 2) | 200 OK [http://localhost/myphonebook]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-01-31 14:16:12) [GET]
+  Parameters: {"action"=>"show", "id"=>"28", "controller"=>"phonebooks"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = '779d84ef5d002fb83cb29a1367585adff45f3dd36050b7f26933c164f07661e3') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 10) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '28') AND ("contacts".phonebook_id = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 28) [0m
+  [4;36;1mEmail Load (1.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 28) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 96ms (View: 28, DB: 3) | 200 OK [http://localhost/phonebooks/28]
