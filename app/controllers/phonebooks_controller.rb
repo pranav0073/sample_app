@@ -25,4 +25,8 @@ class PhonebooksController < ApplicationController
     @contact = @phonebook.contacts.find_by_id(params[:id])
   end
 
+  def destroy
+    redirect_to :url =>{:controller => 'contacts', :action => 'destroy'}
+  end
+
 end

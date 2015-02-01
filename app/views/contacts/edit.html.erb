@@ -12,7 +12,7 @@
     
     <% f.fields_for :mobiles do |builder| %>
       <div class ="fields">
-        <%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]])%>
+        <%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]], :selected => builder.object[:mtype])  %>
         <%= builder.text_field :details %>
         <%= link_to_remove_fields "remove", builder%>
         </br>

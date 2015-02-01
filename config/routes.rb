@@ -1,7 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => 'pages', :action => 'home'
-  map.contact '/contact', :controller => 'pages', :action => 'contact'
+ # map.contact '/contact', :controller => 'pages', :action => 'contact'
   map.about '/about', :controller => 'pages', :action => 'about'
   map.help '/help', :controller => 'pages', :action => 'help'
   map.signup '/signup', :controller => 'users', :action => 'new'
@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.phonebook '/myphonebook', :controller => 'phonebooks', :action => 'index'
   map.resources :contacts
   map.add '/add', :controller => 'phonebooks', :action => 'new'
+  #map.del '/delete', :controller => 'contacts', :action => 'destroy'
   #map.update '/update', :controller => 'contacts', :action =>'update'
   #map.phonebook '/phonebook', :controller => 'phonebooks', :action => 'index'
   #map.home '/', controller => 'pages', :action => 'home'

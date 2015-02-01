@@ -34,7 +34,15 @@ class ContactsController < ApplicationController
     else
       render :action => 'edit'
     end
-   
+  end
+
+  def destroy
+   user = current_user
+    phonebook = current_user.phonebook
+    @contact = phonebook.contacts.find(params[:id])
+    @contact.destroy
+    flash[:notice] = "Successfully destroyed contact."
+    redirect_to "/myphonebook"
   end
 
 end
