@@ -17,4 +17,24 @@ class ContactsController < ApplicationController
   	
   end
 
+  def edit
+    
+    user = current_user
+    phonebook = current_user.phonebook
+    @contact = phonebook.contacts.find(params[:id])
+  end
+
+
+  def update
+    #redirect_to  phonebook_path
+    @contact = Contact.find(params[:id])
+    if @contact.update_attributes(params[:contact])
+      flash[:notice] = "Successfully updated contact."
+      redirect_to "/phonebooks/#{params[:id]}"
+    else
+      render :action => 'edit'
+    end
+   
+  end
+
 end

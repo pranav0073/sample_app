@@ -177,3 +177,8 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+
+.right-assign{
+  float: right;
+margin-top: -8%;
+}

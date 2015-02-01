@@ -10,11 +10,11 @@
   <%= f.label :mobiles %><br />
   <div class="fields">
   	
-    <% f.fields_for :mobiles do |ff| %>
-  		<div class ="field">
-    		<%= ff.select :mtype,options_for_select([["HOME", "H"], ["WORK", "W"],["OTHER", "O"]])%>
-   	 		<%= ff.text_field :details %>
-   	 		<%= link_to_remove_fields "remove", ff%>
+    <% f.fields_for :mobiles do |builder| %>
+  		<div class ="fields">
+    		<%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]])%>
+   	 		<%= builder.text_field :details %>
+   	 		<%= link_to_remove_fields "remove", builder%>
    	 		</br>
   		</div>
 
@@ -22,17 +22,19 @@
       <%= link_to_add_fields "Add more", f, :mobiles%>
   	
 
-  </div>
+  </div><!-- -div ends -->
+  <%= f.label :emails %><br />
   <div class="fields">
-    <%= f.label :emails %><br />
-    <% f.fields_for :emails do |fff| %>
+    
+    <% f.fields_for :emails do |builder| %>
   		<div class ="fields">
-   	 		<%= fff.text_field :address %>
-   	 		<%= fff.hidden_field :_destroy %>
-   	 		<%= link_to_remove_fields "remove", fff%>
+   	 		<%= builder.text_field :address %>
+   	 		<%= builder.hidden_field :_destroy %>
+   	 		<%= link_to_remove_fields "remove", builder%>
    	 		</br>
   		</div>
   	<% end %>
+    <%= link_to_add_fields "Add more", f, :emails%>
   </div>
   <div class="actions">
     <%= f.submit "Add Contact" %>

@@ -1,0 +1,45 @@
+
+
+<% form_for :contact, @contact, :url=> {:action => :update},:html => { :method => :put }do |f| %>
+
+  <%= f.error_messages %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <%= f.label :mobiles %><br />
+  <div class="fields">
+    
+    <% f.fields_for :mobiles do |builder| %>
+      <div class ="fields">
+        <%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]])%>
+        <%= builder.text_field :details %>
+        <%= link_to_remove_fields "remove", builder%>
+        </br>
+      </div>
+
+    <% end %>
+      <%= link_to_add_fields "Add more", f, :mobiles%>
+    
+
+  </div><!-- -div ends -->
+  <%= f.label :emails %><br />
+  <div class="fields">
+    
+    <% f.fields_for :emails do |builder| %>
+      <div class ="fields">
+        <%= builder.text_field :address %>
+        <%= builder.hidden_field :_destroy %>
+        <%= link_to_remove_fields "remove", builder%>
+        </br>
+      </div>
+    <% end %>
+    <%= link_to_add_fields "Add more", f, :emails%>
+  </div>
+  <div class="actions">
+    <%= f.submit "Update" %>
+  </div>
+  
+<% end %>
+
+

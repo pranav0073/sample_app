@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.phonebook '/myphonebook', :controller => 'phonebooks', :action => 'index'
   map.resources :contacts
   map.add '/add', :controller => 'phonebooks', :action => 'new'
+  #map.update '/update', :controller => 'contacts', :action =>'update'
   #map.phonebook '/phonebook', :controller => 'phonebooks', :action => 'index'
   #map.home '/', controller => 'pages', :action => 'home'
   # The priority is based upon order of creation: first created -> highest priority.
