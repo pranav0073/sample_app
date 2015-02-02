@@ -1,6 +1,8 @@
 <h1><%= @contact[:name]%></h1><span class ="right-assign">
+
 <%= button_to "delete", @contact, :method => :delete %>
 <%= link_to("Edit Details", edit_phonebook_path)%></span>
+
 <p>Mobile/Extensions</p>
 <p>
 	<ul>

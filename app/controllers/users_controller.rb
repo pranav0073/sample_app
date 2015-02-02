@@ -18,6 +18,10 @@ class UsersController < ApplicationController
   	if @user.save
   		sign_in @user
   		flash[:success] = "Welcome to the Sample App!"
+      #User.find(params[:id])
+      user = User.last
+      user.create_phonebook(:name => "#{user[:name]}'s Phonebook" )
+     
   		redirect_to @user 
   		#handle a successful save
   	else
