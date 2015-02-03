@@ -1,8 +1,8 @@
 class ContactsController < ApplicationController
   def new
   	@contact = Contact.new
-  	3.times { @contact.mobiles.build}
-    2.times { @contact.emails.build}
+  	1.times { @contact.mobiles.build}
+    1.times { @contact.emails.build}
   	#COUNTY_OPTIONS = ["Avon", "Bedfordshire", "Berkshire"]
   end
 
