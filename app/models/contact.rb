@@ -8,4 +8,14 @@ class Contact < ActiveRecord::Base
 	accepts_nested_attributes_for :other_connections, :allow_destroy => true, :reject_if => proc { |a| a['connection_detail'].blank? }
 
 	validates_presence_of :name
+	before_validation :strip_whitespace
+
+	def strip_whitespace
+  		self.name = self.name.strip
+  		self.fb = self.fb.strip
+  		self.twitter = self.twitter.strip
+  		self.github = self.github.strip
+  		self.google_plus = self.google_plus.strip
+  		
+	end
 end

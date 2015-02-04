@@ -3,6 +3,14 @@
 <% form_for :contact, @contact, :url=> {:action => :update},:html => { :method => :put }do |f| %>
 
   <%= f.error_messages %>
+
+  <p class = "right-assign">
+  <button type="button" class="btn btn-primary btn-lg fixed" data-toggle="modal" data-target="#myModal">
+  Add Connections
+  </button>
+
+  <%= render 'contacts/modal_moreConnection'%>
+
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -36,10 +44,58 @@
     <% end %>
     <%= link_to_add_fields "Add more", f, :emails%>
   </div>
+
+
+  <span id="facebook-field" >
+    <p class = "fields">
+      <%= f.label :fb, 'Facebook' %><br />
+      <%= f.text_field :fb %>
+      <%= link_to "remove","#",:id=>"fb-remove"%>
+    </p>
+  </span>
+  <script>
+    jQuery('#facebook-field').hide();
+  </script>
+
+  <span id="twitter-field" >
+    <p class = "fields">
+      <%= f.label :twitter, 'Twitter' %><br />
+      <%= f.text_field :twitter %>
+      <%= link_to "remove","#",:id=>"twitter-remove"%>
+    </p>
+  </span>
+  <script>
+   jQuery('#twitter-field').hide();
+  </script>
+
+  <span id="google-field" >
+    <p class = "fields">
+      <%= f.label :google_plus, 'Google +' %><br />
+      <%= f.text_field :google_plus %>
+      <%= link_to "remove","#",:id=>"google-remove"%>
+    </p>
+  </span>
+  <script>
+   jQuery('#google-field').hide();
+   
+  </script>
+
+  <span id="github-field" >
+    <p class = "fields">
+      <%= f.label :github, 'Github' %><br />
+      <%= f.text_field :github %>
+      <%= link_to "remove","#",:id=>"github-remove"%>
+    </p>
+  </span>
+  <script>
+   jQuery('#github-field').hide();
+  </script>
+
+
   <div class="actions">
     <%= f.submit "Update" %>
   </div>
   
 <% end %>
 
-
+<%= javascript_include_tag "custom"%>

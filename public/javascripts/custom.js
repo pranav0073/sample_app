@@ -47,6 +47,28 @@ jQuery(document).ready(function(){
                                                      // field using .val()		
 	})
 
+	var value= jQuery("#contact_google_plus").val();
+   if(value != ""){
+    jQuery('#google-field').show();
+   }
+
+   var value= jQuery("#contact_fb").val();
+   console.log(value);
+   if(value != "" ||value == undefined){
+    jQuery('#facebook-field').show();
+   }
+
+   var value= jQuery("#contact_twitter").val();
+   console.log(value);
+   if(value != "" || value == undefined){
+    jQuery('#twitter-field').show();
+   }
+   var value= jQuery("#contact_github").val();
+   console.log(value);
+   if(value != ""){
+    jQuery('#github-field').show();
+   }
+
 
 
 	

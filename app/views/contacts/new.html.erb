@@ -1,17 +1,18 @@
 
 <h1>Create a new Contact</h1>
-<p class = "right-assign">
-  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Add Connections
-  </button>
 
-  <%= render 'contacts/modal_moreConnection'%>
- </p>
 
  
 <h2>Add details</h2>
 <% form_for(@contact) do |f| %>
 	<%= f.error_messages %>
+  <p class = "right-assign">
+  <button type="button" class="btn btn-primary btn-lg fixed" data-toggle="modal" data-target="#myModal">
+  Add Connections
+  </button>
+
+  <%= render 'contacts/modal_moreConnection'%>
+ </p>
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>

@@ -22,13 +22,25 @@
 		<% end %>
 	</ul>
 </p>
-<% if !@contact[:fb].nil? %>
+
+<% if !@contact[:fb].blank? %>
 	<strong><p>Facebook-id</p></strong> 
 	<p><%= @contact[:fb] %></p>
 <% end %>
-<% if !@contact[:google_plus].nil? %>
+
+<% if !@contact[:google_plus].blank? %>
 	<strong><p>Google + </p></strong>
 	<p><%= @contact[:google_plus] %></p>
+<% end %>
+
+<% if !@contact[:twitter].blank? %>
+	<strong><p>Twitter</p></strong>
+	<p><%= @contact[:twitter] %></p>
+<% end %>
+
+<% if !@contact[:github].blank? %>
+	<strong><p>Github</p></strong>
+	<p><%= @contact[:github] %></p>
 <% end %>
 
 <%= link_to "My Contacts", phonebook_path %>
