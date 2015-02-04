@@ -1,4 +1,6 @@
-
+<div class ="container">
+<div class = "col-md-1"></div>
+<div class = "col-md-11">
 <h1>Create a new Contact</h1>
 <h2>Add details</h2>
 <% form_for(@contact) do |f| %>
@@ -10,10 +12,10 @@
         <%= render 'contacts/modal_moreConnection'%>
     </p>
     <div class="field">
-        <%= f.label :name %><br />
+        <strong><p><h3>Name</h3></p></strong>
         <%= f.text_field :name %>
     </div>
-    <%= f.label :mobiles %><br />
+    <strong><p><h3>Mobiles</h3></p></strong>
     <div class="fields">
         <% f.fields_for :mobiles do |builder| %>
   		    <div class ="fields">
@@ -25,7 +27,7 @@
                 <%= link_to_add_fields "Add more", f, :mobiles%>
     	<% end %>
     </div><!-- -div ends -->
-    <%= f.label :emails %><br />
+    <strong><p><h3>Emails</h3></p></strong>
     <div class="fields">
         <% f.fields_for :emails do |builder| %>
   		    <div class ="fields">
@@ -37,6 +39,8 @@
   	    <% end %>
         <%= link_to_add_fields "Add more", f, :emails%>
     </div>
+
+    <strong><p><h3>Connections</h3></p></strong>
 
     <span id="facebook-field" >
         <p class = "fields">
@@ -81,25 +85,31 @@
     <script>
         jQuery('#github-field').hide();
     </script>
-     
-    <div class="fields">
+
+    <div class="fields hiddenOther">
         <% f.fields_for :other_connections do |builder| %>
             <div class ="fields">
-                 <%= builder.label :connection_type%>
-                 <%= builder.text_field :connection_type %>
-                 <%= builder.hidden_field :_destroy %>
-                 <%= builder.label :connection_detail%>
-                 <%= builder.text_field :connection_detail %>
-                 <%= link_to_remove_fields "remove", builder%>
-                 </br>
+              <%= builder.label :connection_type,"Tag"%>
+              <%= builder.text_field :connection_type %>
+              <%= builder.hidden_field :_destroy %>
+              <%= builder.label :connection_details,"Detail"%>
+              <%= builder.text_field :connection_detail %>
+              <%= link_to_remove_fields "remove", builder%>
+              </br>
             </div>
         <% end %>
-        <%= link_to_add_fields "Add more", f, :other_connections%>
+        <%= link_to_add_fields "Add other connections", f, :other_connections%>
     </div>
+    <script>
+        jQuery('.hiddenOther').hide();
+    </script>
 
     <div class="actions">
         <%= f.submit "Add Contact" %>
     </div>
 <% end %>
 <%= javascript_include_tag "custom"%>
+</div>
+<div class = "col-md-2"></div>
+</div>
 

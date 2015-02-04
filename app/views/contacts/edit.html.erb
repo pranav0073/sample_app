@@ -1,5 +1,7 @@
 
-
+<div class ="container">
+<div class = "col-md-1"></div>
+<div class = "col-md-11">
 <% form_for :contact, @contact, :url=> {:action => :update},:html => { :method => :put }do |f| %>
 
   <%= f.error_messages %>
@@ -15,7 +17,7 @@
     <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-  <%= f.label :mobiles %><br />
+   <strong><p><h3>Mobiles</h3></p></strong>
   <div class="fields">
     
     <% f.fields_for :mobiles do |builder| %>
@@ -31,7 +33,7 @@
     
 
   </div><!-- -div ends -->
-  <%= f.label :emails %><br />
+   <strong><p><h3>Emails</h3></p></strong>
   <div class="fields">
     
     <% f.fields_for :emails do |builder| %>
@@ -45,7 +47,7 @@
     <%= link_to_add_fields "Add more", f, :emails%>
   </div>
 
-
+ <strong><p><h3>Connections</h3></p></strong>
   <span id="facebook-field" >
     <p class = "fields">
       <%= f.label :fb, 'Facebook' %><br />
@@ -90,9 +92,33 @@
    jQuery('#github-field').hide();
   </script>
 
+  <div class="fields hiddenOther">
+      <% count = 0%>
+        <% f.fields_for :other_connections do |builder| %>
+            <div class ="fields">
+            <% count = count+1%>
+              <%= builder.label :connection_type,"Tag"%>
+              <%= builder.text_field :connection_type %>
+              <%= builder.hidden_field :_destroy %>
+              <%= builder.label :connection_details,"Detail"%>
+              <%= builder.text_field :connection_detail %>
+              <%= link_to_remove_fields "remove", builder%>
+              </br>
+            </div>
+        <% end %>
+        
+        <%= link_to_add_fields "Add other connections", f, :other_connections%>
+        
+  </div>
+  <script>
+     
+  </script>
 
   <div class="actions">
     <%= f.submit "Save Changes" %>
   </div>
 <% end %>
 <%= javascript_include_tag "custom"%>
+</div>
+<div class = "col-md-2"></div>
+</div>

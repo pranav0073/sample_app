@@ -3,6 +3,7 @@ class ContactsController < ApplicationController
   	@contact = Contact.new
   	1.times { @contact.mobiles.build}
     1.times { @contact.emails.build}
+    1.times { @contact.other_connections.build}
   	#COUNTY_OPTIONS = ["Avon", "Bedfordshire", "Berkshire"]
   end
 

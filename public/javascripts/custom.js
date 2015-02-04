@@ -9,6 +9,10 @@ jQuery(document).ready(function(){
 		console.log("twitter selected");
 		jQuery('#twitter-field').show();
 	})
+	jQuery('#other').on('click',function(){
+		console.log("twitter selected");
+		jQuery('.hiddenOther').show();
+	})
 
 	jQuery('#google').on('click',function(){
 		console.log("google+ selected");
@@ -22,6 +26,7 @@ jQuery(document).ready(function(){
 
 	jQuery('#other').on('click',function(){
 		console.log("other selected");
+		jQuery('.hiddenOther').show();
 	})
 	
 	jQuery('#fb-remove').on('click',function(){
