@@ -3,7 +3,7 @@
 <%= button_to "delete", @contact, :method => :delete %>
 <%= link_to("Edit Details", edit_phonebook_path)%></span>
 
-<strong><p>Mobile/Extensions</p></strong>
+<strong><p><h3>Mobile/Extensions</h3></p></strong>
 <p>
 	<ul>
 		<% mobiles = @contact.mobiles%>
@@ -13,7 +13,7 @@
 	</ul>
 </p>
 
-<strong><p>Emails</p></strong>
+<strong><p><h3>Emails</h3></p></strong>
 <p>
 	<ul>
 		<% emails = @contact.emails%>
@@ -23,6 +23,7 @@
 	</ul>
 </p>
 
+<strong><p><h3>Connections</h3></p></strong>
 <% if !@contact[:fb].blank? %>
 	<strong><p>Facebook-id</p></strong> 
 	<p><%= @contact[:fb] %></p>
@@ -42,5 +43,15 @@
 	<strong><p>Github</p></strong>
 	<p><%= @contact[:github] %></p>
 <% end %>
+
+	
+		<% connnection = @contact.other_connections%>
+		<% connnection.each do |connnection|%>
+			<strong><p><%= connnection[:connection_type] %></p></strong>
+			<p><%= connnection[:connection_detail] %></p>
+		<% end %>
+
+	
+
 
 <%= link_to "My Contacts", phonebook_path %>
