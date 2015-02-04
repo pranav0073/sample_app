@@ -55745,3 +55745,1486 @@ Rendered layouts/_stylesheets (1.0ms)
 Rendered layouts/_header (21.0ms)
 Rendered layouts/_footer (0.0ms)
 Completed in 152ms (View: 73, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2015-02-04 15:10:26) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"new"}
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered contacts/_modal_moreConnection (2.0ms)
+Rendered contacts/_mobile_fields (3.0ms)
+Rendered contacts/_email_fields (3.0ms)
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (29.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 229ms (View: 129, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2015-02-04 15:12:18) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"new"}
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered contacts/_modal_moreConnection (0.0ms)
+Rendered contacts/_mobile_fields (2.0ms)
+Rendered contacts/_email_fields (2.0ms)
+Rendered contacts/_other_connection_fields (4.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 118ms (View: 82, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2015-02-04 15:12:54) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"new"}
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered contacts/_modal_moreConnection (0.0ms)
+Rendered contacts/_mobile_fields (1.0ms)
+Rendered contacts/_email_fields (2.0ms)
+Rendered contacts/_other_connection_fields (3.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (20.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 118ms (View: 62, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing ContactsController#new (for 127.0.0.1 at 2015-02-04 15:25:16) [GET]
+  Parameters: {"controller"=>"contacts", "action"=>"new"}
+Rendering template within layouts/application
+Rendering contacts/new
+Rendered contacts/_modal_moreConnection (0.0ms)
+Rendered contacts/_mobile_fields (1.0ms)
+Rendered contacts/_email_fields (2.0ms)
+Rendered contacts/_other_connection_fields (4.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (27.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 145ms (View: 112, DB: 1) | 200 OK [http://localhost/contacts/new]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:17:27) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (83.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 180ms (View: 178, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2015-02-04 16:17:32) [GET]
+  Parameters: {"controller"=>"users", "action"=>"new"}
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 48ms (View: 30, DB: 0) | 200 OK [http://localhost/signup]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2015-02-04 16:23:35) [POST]
+  Parameters: {"controller"=>"users", "commit"=>"Sign up", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "user"=>{"name"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>""}, "action"=>"create"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE (LOWER("users"."email") = '') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 83ms (View: 62, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:23:55) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:23:57) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 36ms (View: 33, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-02-04 16:23:58) [GET]
+  Parameters: {"controller"=>"users", "id"=>"32", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 32) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 57ms (View: 21, DB: 2) | 200 OK [http://localhost/users/32]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:44:36) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (74.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 97ms (View: 94, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:44:37) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (25.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 44ms (View: 41, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 16:44:41) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (26.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 44ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-02-04 16:44:43) [GET]
+  Parameters: {"controller"=>"users", "id"=>"32", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 32) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 57ms (View: 20, DB: 1) | 200 OK [http://localhost/users/32]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-02-04 16:44:45) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts".phonebook_id = 16) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 114ms (View: 69, DB: 1) | 200 OK [http://localhost/myphonebook]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 16:44:48) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"57", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '57') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 57) [0m
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 57) [0m
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 57) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 119ms (View: 70, DB: 3) | 200 OK [http://localhost/phonebooks/57]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 16:44:50) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"57", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/57/edit
+Completed in 4ms (DB: 0) | 302 Found [http://localhost/phonebooks/57/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 16:44:50) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"57", "action"=>"edit"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 57 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (37.0ms)
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 57) [0m
+Rendered contacts/_mobile_fields (15.0ms)
+  [4;36;1mEmail Load (1.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 57) [0m
+Rendered contacts/_email_fields (6.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 57) [0m
+Rendered contacts/_other_connection_fields (10.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (6.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 292ms (View: 245, DB: 3) | 200 OK [http://localhost/contacts/57/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 16:46:34) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"57", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"pranav0073", "name"=>"Take", "github"=>"", "other_connections_attributes"=>{"1423048580040"=>{"connection_detail"=>"", "_destroy"=>"", "connection_type"=>""}}, "mobiles_attributes"=>{"1423048556216"=>{"_destroy"=>"", "details"=>"9788452812", "mtype"=>"WORK"}}, "google_plus"=>"", "twitter"=>"", "emails_attributes"=>{"1423048568261"=>{"_destroy"=>"", "address"=>"take@akamai.com"}}}}
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 57) [0m
+  [4;35;1mContact Update (39.0ms)[0m   [0mUPDATE "contacts" SET "updated_at" = '2015-02-04 11:16:34', "fb" = 'pranav0073' WHERE "id" = 57[0m
+  [4;36;1mMobile Create (1.0ms)[0m   [0;1mINSERT INTO "mobiles" ("contact_id", "created_at", "details", "mtype", "updated_at") VALUES(57, '2015-02-04 11:16:34', '9788452812', 'WORK', '2015-02-04 11:16:34')[0m
+  [4;35;1mEmail Create (0.0ms)[0m   [0mINSERT INTO "emails" ("contact_id", "created_at", "address", "updated_at") VALUES(57, '2015-02-04 11:16:34', 'take@akamai.com', '2015-02-04 11:16:34')[0m
+Redirected to http://localhost:3000/phonebooks/57
+Completed in 178ms (DB: 40) | 302 Found [http://localhost/contacts/57]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 16:46:35) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"57", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '57') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 57) [0m
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 57) [0m
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 57) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (39.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 120ms (View: 75, DB: 2) | 200 OK [http://localhost/phonebooks/57]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-02-04 16:46:40) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".phonebook_id = 16) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 52ms (View: 18, DB: 1) | 200 OK [http://localhost/myphonebook]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 16:46:43) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"57", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '57') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 57) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 57) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 57) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 71ms (View: 36, DB: 0) | 200 OK [http://localhost/phonebooks/57]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:27:39) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (61.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 84ms (View: 82, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:27:40) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 37ms (View: 34, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:28:47) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (25.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 43ms (View: 40, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:29:07) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (2.0ms)
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (23.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 40ms (View: 38, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:29:16) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (22.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 40ms (View: 36, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:30:20) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (24.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 42ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:36:48) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (26.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 48ms (View: 45, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing PagesController#home (for 127.0.0.1 at 2015-02-04 17:39:45) [GET]
+  Parameters: {"controller"=>"pages", "action"=>"home"}
+Rendering template within layouts/application
+Rendering pages/home
+Rendered layouts/_stylesheets (1.0ms)
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+Rendered layouts/_header (25.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 43ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing UsersController#show (for 127.0.0.1 at 2015-02-04 17:39:47) [GET]
+  Parameters: {"controller"=>"users", "id"=>"32", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 32) [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/show
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 46ms (View: 16, DB: 0) | 200 OK [http://localhost/users/32]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-02-04 17:39:49) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".phonebook_id = 16) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 56ms (View: 19, DB: 1) | 200 OK [http://localhost/myphonebook]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:39:51) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (34.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 113ms (View: 74, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:42:26) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 85ms (View: 42, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:43:48) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (39.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 122ms (View: 79, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:44:23) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 61ms (View: 28, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 17:44:50) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/53/edit
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/phonebooks/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 17:44:50) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (3.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (2.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 100ms (View: 64, DB: 2) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 17:45:02) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"53", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"", "name"=>"pranav", "github"=>"", "mobiles_attributes"=>{"1423052093881"=>{"_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>""}}
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53) [0m
+  [4;36;1mMobile Create (1.0ms)[0m   [0;1mINSERT INTO "mobiles" ("contact_id", "created_at", "details", "mtype", "updated_at") VALUES(53, '2015-02-04 12:15:02', '9788452812', 'HOME', '2015-02-04 12:15:02')[0m
+Redirected to http://localhost:3000/phonebooks/53
+Completed in 128ms (DB: 1) | 302 Found [http://localhost/contacts/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:45:02) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 70ms (View: 34, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:46:50) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 87ms (View: 46, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:48:08) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 119ms (View: 41, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:48:12) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 75ms (View: 37, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:48:37) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 83ms (View: 44, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:48:40) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 39, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:49:17) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 68ms (View: 33, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:49:52) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 113ms (View: 42, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:49:55) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 79ms (View: 38, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:50:15) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 68ms (View: 35, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:50:30) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 85ms (View: 44, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:50:46) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 84ms (View: 44, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:55:03) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (9.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 122ms (View: 48, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:57:28) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+Rendered phonebooks/_email_views (2.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 82ms (View: 43, DB: 0) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 17:57:30) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/53/edit
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/phonebooks/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 17:57:30) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (2.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (3.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (6.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 113ms (View: 73, DB: 5) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 17:58:09) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (1.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (3.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (4.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 124ms (View: 57, DB: 1) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 17:58:25) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"53", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"", "name"=>"pranav", "github"=>"", "mobiles_attributes"=>{"0"=>{"id"=>"60", "_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"", "emails_attributes"=>{"1423052896742"=>{"_destroy"=>"", "address"=>"pranav0073@gmail.com"}}}}
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53) [0m
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;36;1mEmail Create (1.0ms)[0m   [0;1mINSERT INTO "emails" ("contact_id", "created_at", "address", "updated_at") VALUES(53, '2015-02-04 12:28:25', 'pranav0073@gmail.com', '2015-02-04 12:28:25')[0m
+Redirected to http://localhost:3000/phonebooks/53
+Completed in 156ms (DB: 1) | 302 Found [http://localhost/contacts/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:58:25) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (9.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (10.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 121ms (View: 46, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 17:59:29) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/53/edit
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/phonebooks/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 17:59:29) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (2.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (2.0ms)
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 161ms (View: 120, DB: 5) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 17:59:47) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"53", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"pranav0073@facebook.com", "name"=>"pranav", "github"=>"", "mobiles_attributes"=>{"0"=>{"id"=>"60", "_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"", "emails_attributes"=>{"0"=>{"id"=>"45", "_destroy"=>"", "address"=>"pranav0073@gmail.com"}}}}
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53) [0m
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mContact Update (2.0ms)[0m   [0;1mUPDATE "contacts" SET "updated_at" = '2015-02-04 12:29:47', "fb" = 'pranav0073@facebook.com' WHERE "id" = 53[0m
+Redirected to http://localhost:3000/phonebooks/53
+Completed in 159ms (DB: 3) | 302 Found [http://localhost/contacts/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 17:59:48) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (7.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (6.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 68ms (View: 30, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:06:43) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (8.0ms)
+Rendered phonebooks/_connection_views (1.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 118ms (View: 82, DB: 3) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:08:20) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (7.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (6.0ms)
+Rendered phonebooks/_connection_views (2.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 68ms (View: 33, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 18:08:24) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/53/edit
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/phonebooks/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 18:08:24) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (2.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (3.0ms)
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (6.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 120ms (View: 78, DB: 2) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 18:08:41) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"53", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"pranav0073@facebook.com", "name"=>"pranav", "github"=>"", "mobiles_attributes"=>{"0"=>{"id"=>"60", "_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"pranav123", "emails_attributes"=>{"0"=>{"id"=>"45", "_destroy"=>"", "address"=>"pranav0073@gmail.com"}}}}
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53) [0m
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+  [4;36;1mContact Update (1.0ms)[0m   [0;1mUPDATE "contacts" SET "twitter" = 'pranav123', "updated_at" = '2015-02-04 12:38:41' WHERE "id" = 53[0m
+Redirected to http://localhost:3000/phonebooks/53
+Completed in 149ms (DB: 2) | 302 Found [http://localhost/contacts/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:08:42) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (9.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 65ms (View: 32, DB: 2) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 18:08:49) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/53/edit
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/phonebooks/53/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 18:08:49) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"53", "action"=>"edit"}
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered contacts/_mobile_fields (2.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered contacts/_email_fields (2.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (2.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 126ms (View: 92, DB: 2) | 200 OK [http://localhost/contacts/53/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 18:09:09) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"53", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"pranav0073@facebook.com", "name"=>"pranav", "github"=>"", "other_connections_attributes"=>{"1423053535807"=>{"connection_detail"=>"pranav0073", "_destroy"=>"", "connection_type"=>"stackoverflow"}}, "mobiles_attributes"=>{"0"=>{"id"=>"60", "_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"pranav123", "emails_attributes"=>{"0"=>{"id"=>"45", "_destroy"=>"", "address"=>"pranav0073@gmail.com"}}}}
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 53) [0m
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Redirected to http://localhost:3000/phonebooks/53
+Completed in 41ms (DB: 0) | 302 Found [http://localhost/contacts/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:09:09) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (10.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (9.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 86ms (View: 44, DB: 4) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:09:27) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"53", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '53') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 53) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 53) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 53) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 76ms (View: 38, DB: 1) | 200 OK [http://localhost/phonebooks/53]
+
+
+Processing PhonebooksController#index (for 127.0.0.1 at 2015-02-04 18:09:30) [GET]
+  Parameters: {"controller"=>"phonebooks", "action"=>"index"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/index
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts".phonebook_id = 16) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 61ms (View: 21, DB: 1) | 200 OK [http://localhost/myphonebook]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:09:35) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"58", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (1.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '58') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 58) [0m
+Rendered phonebooks/_mobile_views (9.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 58) [0m
+Rendered phonebooks/_email_views (8.0ms)
+Rendered phonebooks/_connection_views (1.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 58) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 124ms (View: 44, DB: 3) | 200 OK [http://localhost/phonebooks/58]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:10:50) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"59", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '59') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (1.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 59) [0m
+Rendered phonebooks/_mobile_views (9.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 59) [0m
+Rendered phonebooks/_email_views (6.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 59) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 65ms (View: 31, DB: 3) | 200 OK [http://localhost/phonebooks/59]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:10:54) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"59", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (1.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '59') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 59) [0m
+Rendered phonebooks/_mobile_views (7.0ms)
+  [4;35;1mEmail Load (1.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 59) [0m
+Rendered phonebooks/_email_views (6.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 59) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 64ms (View: 32, DB: 2) | 200 OK [http://localhost/phonebooks/59]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:11:07) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (6.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 82ms (View: 43, DB: 0) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 18:11:13) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/56/edit
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/phonebooks/56/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 18:11:13) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"56", "action"=>"edit"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;36;1mPhonebook Load (0.0ms)[0m   [0;1mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (1.0ms)
+  [4;36;1mMobile Load (0.0ms)[0m   [0;1mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered contacts/_mobile_fields (3.0ms)
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered contacts/_email_fields (3.0ms)
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered contacts/_other_connection_fields (4.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 151ms (View: 113, DB: 0) | 200 OK [http://localhost/contacts/56/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 18:11:25) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"56", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"fbpranav", "name"=>"pprashant", "github"=>"", "other_connections_attributes"=>{"0"=>{"id"=>"1", "connection_detail"=>"pranav0073", "_destroy"=>"", "connection_type"=>"stack"}}, "google_plus"=>"", "twitter"=>""}}
+  [4;35;1mContact Load (0.0ms)[0m   [0mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56) [0m
+  [4;36;1mOtherConnection Load (1.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+  [4;35;1mContact Update (2.0ms)[0m   [0mUPDATE "contacts" SET "updated_at" = '2015-02-04 12:41:25', "fb" = 'fbpranav' WHERE "id" = 56[0m
+Redirected to http://localhost:3000/phonebooks/56
+Completed in 146ms (DB: 3) | 302 Found [http://localhost/contacts/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:11:25) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (5.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (6.0ms)
+Rendered phonebooks/_connection_views (1.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 63ms (View: 28, DB: 2) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:11:32) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (5.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (5.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 106ms (View: 28, DB: 2) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:11:52) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (7.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (8.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 83ms (View: 42, DB: 1) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:12:16) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (6.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 74ms (View: 35, DB: 1) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:13:00) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (2.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 91ms (View: 49, DB: 0) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:15:32) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (1.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (6.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (1.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 82ms (View: 43, DB: 1) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:16:22) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (1.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (7.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_other_connection_views (12.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 131ms (View: 53, DB: 2) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:16:53) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (5.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (5.0ms)
+Rendered phonebooks/_connection_views (0.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_other_connection_views (8.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 78ms (View: 42, DB: 1) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:18:00) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (6.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (6.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_connection_views (9.0ms)
+Rendered phonebooks/_other_connection_views (0.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 71ms (View: 36, DB: 2) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:18:18) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (7.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_connection_views (8.0ms)
+
+ActionView::TemplateError (Missing template phonebooks/_other_connection_views.erb in view path app/views) on line #9 of app/views/phonebooks/show.html.erb:
+6: 	<%= render :partial=>"mobile_views"%>
+7: 	<%= render :partial=>"email_views" %>
+8: 	<%= render :partial =>"connection_views"%>
+9: 	<%= render :partial => "other_connection_views" %>
+10: 		
+11: 	<%= link_to "My Contacts", phonebook_path %>
+12: </div>
+
+    app/views/phonebooks/show.html.erb:9
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    C:/Ruby187/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    C:/Ruby187/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (58.0ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:18:32) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (6.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (6.0ms)
+  [4;35;1mOtherConnection Load (1.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_connection_views (8.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 113ms (View: 74, DB: 3) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 18:18:37) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/56/edit
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/phonebooks/56/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 18:18:37) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"56", "action"=>"edit"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered contacts/_mobile_fields (4.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered contacts/_email_fields (3.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (5.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 153ms (View: 115, DB: 1) | 200 OK [http://localhost/contacts/56/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 18:19:01) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"56", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"fbpranav", "name"=>"pprashant", "github"=>"", "other_connections_attributes"=>{"0"=>{"id"=>"1", "connection_detail"=>"pranav0073", "_destroy"=>"", "connection_type"=>"stack"}}, "mobiles_attributes"=>{"1423054119816"=>{"_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"", "emails_attributes"=>{"1423054128134"=>{"_destroy"=>"", "address"=>"pprashan@akamai.com"}}}}
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56) [0m
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+  [4;36;1mMobile Create (2.0ms)[0m   [0;1mINSERT INTO "mobiles" ("contact_id", "created_at", "details", "mtype", "updated_at") VALUES(56, '2015-02-04 12:49:01', '9788452812', 'HOME', '2015-02-04 12:49:01')[0m
+  [4;35;1mEmail Create (0.0ms)[0m   [0mINSERT INTO "emails" ("contact_id", "created_at", "address", "updated_at") VALUES(56, '2015-02-04 12:49:01', 'pprashan@akamai.com', '2015-02-04 12:49:01')[0m
+Redirected to http://localhost:3000/phonebooks/56
+Completed in 173ms (DB: 2) | 302 Found [http://localhost/contacts/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:19:01) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (1.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (8.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_connection_views (8.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (3.0ms)
+Rendered layouts/_footer (1.0ms)
+Completed in 78ms (View: 40, DB: 2) | 200 OK [http://localhost/phonebooks/56]
+
+
+Processing PhonebooksController#edit (for 127.0.0.1 at 2015-02-04 18:19:08) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"edit"}
+Redirected to http://localhost:3000/contacts/56/edit
+Completed in 2ms (DB: 0) | 302 Found [http://localhost/phonebooks/56/edit]
+
+
+Processing ContactsController#edit (for 127.0.0.1 at 2015-02-04 18:19:08) [GET]
+  Parameters: {"controller"=>"contacts", "id"=>"56", "action"=>"edit"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56 AND ("contacts".phonebook_id = 16)) [0m
+Rendering template within layouts/application
+Rendering contacts/edit
+Rendered contacts/_modal_moreConnection (0.0ms)
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered contacts/_mobile_fields (2.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered contacts/_email_fields (2.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered contacts/_other_connection_fields (5.0ms)
+Rendered layouts/_stylesheets (2.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 113ms (View: 77, DB: 1) | 200 OK [http://localhost/contacts/56/edit]
+
+
+Processing ContactsController#update (for 127.0.0.1 at 2015-02-04 18:19:16) [PUT]
+  Parameters: {"controller"=>"contacts", "commit"=>"Save Changes", "id"=>"56", "authenticity_token"=>"nH82NnOg5FybapyFFdA//uugQJI3ojABYM6igqaiQwI=", "_method"=>"put", "action"=>"update", "contact"=>{"fb"=>"fbpranav", "name"=>"pprashant", "github"=>"", "other_connections_attributes"=>{"1423054152630"=>{"connection_detail"=>"", "_destroy"=>"", "connection_type"=>""}, "0"=>{"id"=>"1", "connection_detail"=>"pranav0073", "_destroy"=>"", "connection_type"=>"stack"}}, "mobiles_attributes"=>{"0"=>{"id"=>"61", "_destroy"=>"", "details"=>"9788452812", "mtype"=>"HOME"}}, "google_plus"=>"", "twitter"=>"", "emails_attributes"=>{"0"=>{"id"=>"46", "_destroy"=>"", "address"=>"pprashan@akamai.com"}}}}
+  [4;36;1mContact Load (0.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = 56) [0m
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+  [4;36;1mOtherConnection Load (0.0ms)[0m   [0;1mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+  [4;35;1mEmail Load (0.0ms)[0m   [0mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Redirected to http://localhost:3000/phonebooks/56
+Completed in 49ms (DB: 0) | 302 Found [http://localhost/contacts/56]
+
+
+Processing PhonebooksController#show (for 127.0.0.1 at 2015-02-04 18:19:16) [GET]
+  Parameters: {"controller"=>"phonebooks", "id"=>"56", "action"=>"show"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."remember_token" = 'ffab91284f5bd6155e090837cb784bf8867019d923d6f6ca19a5fd83f42846a4') LIMIT 1[0m
+  [4;35;1mPhonebook Load (0.0ms)[0m   [0mSELECT * FROM "phonebooks" WHERE ("phonebooks".user_id = 32) LIMIT 1[0m
+  [4;36;1mContact Load (1.0ms)[0m   [0;1mSELECT * FROM "contacts" WHERE ("contacts"."id" = '56') AND ("contacts".phonebook_id = 16) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering phonebooks/show
+  [4;35;1mMobile Load (0.0ms)[0m   [0mSELECT * FROM "mobiles" WHERE ("mobiles".contact_id = 56) [0m
+Rendered phonebooks/_mobile_views (8.0ms)
+  [4;36;1mEmail Load (0.0ms)[0m   [0;1mSELECT * FROM "emails" WHERE ("emails".contact_id = 56) [0m
+Rendered phonebooks/_email_views (10.0ms)
+  [4;35;1mOtherConnection Load (0.0ms)[0m   [0mSELECT * FROM "other_connections" WHERE ("other_connections".contact_id = 56) [0m
+Rendered phonebooks/_connection_views (9.0ms)
+Rendered layouts/_stylesheets (1.0ms)
+Rendered layouts/_header (4.0ms)
+Rendered layouts/_footer (0.0ms)
+Completed in 86ms (View: 45, DB: 1) | 200 OK [http://localhost/phonebooks/56]
