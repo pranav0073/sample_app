@@ -69,7 +69,11 @@ jQuery(document).ready(function(){
     jQuery('#github-field').show();
    }
 
+   function fbremove(){
 
+   		jQuery('#facebook-field').hide();
+		jQuery('#contact_fb').val('');
+   }
 
 	
 });

@@ -16,3 +16,23 @@ function add_fields(link, association, content){
 }
 
 
+function fbremove(){
+
+   		jQuery('#facebook-field').hide();
+		jQuery('#contact_fb').val('');
+}
+function glremove(){
+
+   		jQuery('#google-field').hide();
+		jQuery('#contact_google_plus').val('');
+}
+function twremove(){
+
+   		jQuery('#twitter-field').hide();
+		jQuery('#contact_twitter').val('');
+}
+function gitremove(){
+
+   		jQuery('#github-field').hide();
+		jQuery('#contact_github').val('');
+}

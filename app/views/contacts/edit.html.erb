@@ -50,7 +50,7 @@
     <p class = "fields">
       <%= f.label :fb, 'Facebook' %><br />
       <%= f.text_field :fb %>
-      <%= link_to "remove","#",:id=>"fb-remove"%>
+      <%= link_to_function "remove","fbremove()",:id=>"fb-remove"%>
     </p>
   </span>
   <script>
@@ -61,7 +61,7 @@
     <p class = "fields">
       <%= f.label :twitter, 'Twitter' %><br />
       <%= f.text_field :twitter %>
-      <%= link_to "remove","#",:id=>"twitter-remove"%>
+      <%= link_to_function "remove","twremove()",:id=>"fb-remove"%>
     </p>
   </span>
   <script>
@@ -72,19 +72,18 @@
     <p class = "fields">
       <%= f.label :google_plus, 'Google +' %><br />
       <%= f.text_field :google_plus %>
-      <%= link_to "remove","#",:id=>"google-remove"%>
+      <%= link_to_function "remove","glremove()",:id=>"fb-remove"%>
     </p>
   </span>
   <script>
    jQuery('#google-field').hide();
-   
   </script>
 
   <span id="github-field" >
     <p class = "fields">
       <%= f.label :github, 'Github' %><br />
       <%= f.text_field :github %>
-      <%= link_to "remove","#",:id=>"github-remove"%>
+      <%= link_to_function "remove","gitremove()",:id=>"fb-remove"%>
     </p>
   </span>
   <script>
@@ -93,9 +92,7 @@
 
 
   <div class="actions">
-    <%= f.submit "Update" %>
+    <%= f.submit "Add Contact" %>
   </div>
-  
 <% end %>
-
 <%= javascript_include_tag "custom"%>
