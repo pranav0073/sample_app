@@ -1,5 +1,6 @@
 class OtherConnection < ActiveRecord::Base
 	before_validation :strip_whitespace
+	validates_presence_of :connection_type, :connection_detail
 
 	def strip_whitespace
   		self.connection_type = self.connection_type.strip

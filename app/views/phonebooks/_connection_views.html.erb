@@ -10,28 +10,28 @@
 						
 						
 							<% if !@contact[:fb].blank? %>
-							<li><strong><p>Facebook-id</p></strong></li>
+							<li><strong>Facebook-id</strong></li>
 							<p><%= @contact[:fb] %></p>
 							<% end %>
 			
 							<% if !@contact[:google_plus].blank? %>
-							<li><strong><p>Google + </p></strong></li>
+							<li><strong>Google + </strong></li>
 							<p><%= @contact[:google_plus] %></p>
 							<% end %>
 						
 							<% if !@contact[:twitter].blank? %>
-							<li><strong><p>Twitter</p></strong></li>
+							<li><strong>Twitter</strong></li>
 							<p><%= @contact[:twitter] %></p>
 							<% end %>
 						
 							<% if !@contact[:github].blank? %>
-							<li><strong><p>Github</p></strong></li>
+							<li><strong>Github</strong></li>
 							<p><%= @contact[:github] %></p>
 							<% end %>
 
 							<% connnection = @contact.other_connections%>
 							<% connnection.each do |connnection|%>
-								<li><strong><p><%= connnection[:connection_type] %></p></strong></li>
+								<li><strong><%= connnection[:connection_type] %></strong></li>
 								<p><%= connnection[:connection_detail] %></p>
 							<% end %>
 							
