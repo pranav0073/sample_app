@@ -10,6 +10,7 @@
 #
 require 'digest'
 class User < ActiveRecord::Base
+	#acts_as_audited :protect => false
 	has_one :phonebook
 	attr_accessor :password
 	attr_accessible :name, :email, :password, :password_confirmation
