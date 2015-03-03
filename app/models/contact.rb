@@ -1,5 +1,5 @@
 class Contact < ActiveRecord::Base
-	acts_as_audited
+	#acts_as_audited
 	belongs_to :phonebook
 	has_many :mobiles, :dependent =>:destroy
 	has_many :emails,  :dependent =>:destroy

@@ -14,6 +14,7 @@ ActionController::Routing::Routes.draw do |map|
   map.phonebook '/myphonebook', :controller => 'phonebooks', :action => 'index'
   map.resources :contacts
   map.add '/add', :controller => 'phonebooks', :action => 'new'
+  map.prepend0 '/prepend0', :controller => 'phonebooks', :action => 'prepend0'
   #map.del '/delete', :controller => 'contacts', :action => 'destroy'
   #map.update '/update', :controller => 'contacts', :action =>'update'
   #map.phonebook '/phonebook', :controller => 'phonebooks', :action => 'index'

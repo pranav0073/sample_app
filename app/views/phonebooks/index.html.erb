@@ -1,5 +1,5 @@
 <h4><%= @phonebook[:name].upcase%></h4>
-<span class ="right-assign"><%= link_to("Add Contact", "/add") %></span>
+<span class ="right-assign"><%= link_to("Add Contact", "/add") %><br><br><%= link_to("Prepend 0", "/prepend0")%></span>
 	<ul>
 		<% @contacts.each do |contact|%>
 		<li><%= link_to("#{contact[:name]}", "phonebooks/#{contact[:id]}")%></li>

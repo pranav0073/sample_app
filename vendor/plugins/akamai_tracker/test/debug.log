@@ -1,0 +1,220 @@
+# Logfile created on Mon Mar 02 10:40:19 +0530 2015 by logger.rb/1.2.6
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (95.4ms)[0m   [0;1mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (88.5ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (64.6ms)[0m   [0;1mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (81.5ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (73.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (97.4ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (161.0ms)[0m   [0;1mDROP TABLE "hickwalls"[0m
+  [4;35;1mSQL (90.4ms)[0m   [0mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (72.6ms)[0m   [0mDROP TABLE "wickwalls"[0m
+  [4;36;1mSQL (72.6ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (72.6ms)[0m   [0;1mDROP TABLE "woodpeckers"[0m
+  [4;35;1mSQL (65.6ms)[0m   [0mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (97.8ms)[0m   [0;1mDROP TABLE "hickwalls"[0m
+  [4;35;1mSQL (56.9ms)[0m   [0mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (55.9ms)[0m   [0mDROP TABLE "wickwalls"[0m
+  [4;36;1mSQL (48.9ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (56.9ms)[0m   [0;1mDROP TABLE "woodpeckers"[0m
+  [4;35;1mSQL (57.9ms)[0m   [0mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (138.7ms)[0m   [0;1mDROP TABLE "hickwalls"[0m
+  [4;35;1mSQL (61.9ms)[0m   [0mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (63.9ms)[0m   [0mDROP TABLE "wickwalls"[0m
+  [4;36;1mSQL (82.8ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (54.9ms)[0m   [0;1mDROP TABLE "woodpeckers"[0m
+  [4;35;1mSQL (98.8ms)[0m   [0mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (98.8ms)[0m   [0;1mDROP TABLE "hickwalls"[0m
+  [4;35;1mSQL (48.9ms)[0m   [0mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (80.8ms)[0m   [0mDROP TABLE "wickwalls"[0m
+  [4;36;1mSQL (73.8ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (72.8ms)[0m   [0;1mDROP TABLE "woodpeckers"[0m
+  [4;35;1mSQL (74.8ms)[0m   [0mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mAkamaiTest::Hickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "hickwalls" [0m
+  [4;35;1mAkamaiTest::Wickwall Load (1.0ms)[0m   [0mSELECT * FROM "wickwalls" [0m
+  [4;36;1mAkamaiTrackerTest::Hickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "hickwalls" [0m
+  [4;35;1mAkamaiTrackerTest::Wickwall Load (0.0ms)[0m   [0mSELECT * FROM "wickwalls" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (195.6ms)[0m   [0;1mDROP TABLE "hickwalls"[0m
+  [4;35;1mSQL (125.7ms)[0m   [0mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (169.6ms)[0m   [0mDROP TABLE "wickwalls"[0m
+  [4;36;1mSQL (179.6ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (186.6ms)[0m   [0;1mDROP TABLE "woodpeckers"[0m
+  [4;35;1mSQL (159.7ms)[0m   [0mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mAkamaiTest::Hickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "hickwalls" [0m
+  [4;35;1mAkamaiTest::Wickwall Load (0.0ms)[0m   [0mSELECT * FROM "wickwalls" [0m
+  [4;36;1mAkamaiTrackerTest::Hickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "hickwalls" [0m
+  [4;35;1mAkamaiTrackerTest::Wickwall Load (1.0ms)[0m   [0mSELECT * FROM "wickwalls" [0m
+  [4;36;1mSQL (1418.0ms)[0m   [0;1mCREATE TABLE "HICKWALLS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255), "LAST_SQUAWK" VARCHAR2(255), "LAST_SQUAWKED_AT" DATE) [0m
+  [4;35;1mSQL (27.9ms)[0m   [0mCREATE SEQUENCE "HICKWALLS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (178.6ms)[0m   [0;1mCREATE TABLE "WICKWALLS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255), "LAST_TWEET" VARCHAR2(255), "LAST_TWEETED_AT" DATE) [0m
+  [4;35;1mSQL (74.8ms)[0m   [0mCREATE SEQUENCE "WICKWALLS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (47.9ms)[0m   [0;1mCREATE TABLE "WOODPECKERS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255)) [0m
+  [4;35;1mSQL (32.9ms)[0m   [0mCREATE SEQUENCE "WOODPECKERS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (34.9ms)[0m   [0;1mselect decode(table_name,upper(table_name),lower(table_name),table_name) from all_tables where owner = sys_context('userenv','session_user') and secondary='N'[0m
+  [4;35;1mSQL (10.0ms)[0m   [0mSELECT version FROM "SCHEMA_MIGRATIONS"[0m
+  [4;36;1mSQL (5.0ms)[0m   [0;1mINSERT INTO "SCHEMA_MIGRATIONS" (version) VALUES ('0')[0m
+  [4;35;1mAkamaiTest::Hickwall Load (5.0ms)[0m   [0mSELECT * FROM "HICKWALLS" [0m
+  [4;36;1mAkamaiTest::Wickwall Load (3.0ms)[0m   [0;1mSELECT * FROM "WICKWALLS" [0m
+  [4;35;1mAkamaiTrackerTest::Hickwall Load (1.0ms)[0m   [0mSELECT * FROM "HICKWALLS" [0m
+  [4;36;1mAkamaiTrackerTest::Wickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "WICKWALLS" [0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (196.9ms)[0m   [0;1mCREATE TABLE "hickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_squawk" varchar(255), "last_squawked_at" datetime) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (147.9ms)[0m   [0;1mCREATE TABLE "wickwalls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "last_tweet" varchar(255), "last_tweeted_at" datetime) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (105.9ms)[0m   [0;1mCREATE TABLE "woodpeckers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255)) [0m
+  [4;35;1mSQL (1.0ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (111.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (120.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT version FROM "schema_migrations"[0m
+  [4;36;1mSQL (118.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('0')[0m
+  [4;35;1mAkamaiTest::Hickwall Load (0.0ms)[0m   [0mSELECT * FROM "hickwalls" [0m
+  [4;36;1mAkamaiTest::Wickwall Load (0.0ms)[0m   [0;1mSELECT * FROM "wickwalls" [0m
+  [4;35;1mAkamaiTrackerTest::Hickwall Load (1.0ms)[0m   [0mSELECT * FROM "hickwalls" [0m
+  [4;36;1mAkamaiTrackerTest::Wickwall Load (0.0ms)[0m   [0;1mSELECT * FROM "wickwalls" [0m
+  [4;36;1mSQL (1928.6ms)[0m   [0;1mDROP TABLE "HICKWALLS"[0m
+  [4;35;1mSQL (86.9ms)[0m   [0mDROP SEQUENCE "HICKWALLS_SEQ"[0m
+  [4;36;1mSQL (149.9ms)[0m   [0;1mCREATE TABLE "HICKWALLS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255), "LAST_SQUAWK" VARCHAR2(255), "LAST_SQUAWKED_AT" DATE) [0m
+  [4;35;1mSQL (71.0ms)[0m   [0mCREATE SEQUENCE "HICKWALLS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (527.6ms)[0m   [0;1mDROP TABLE "WICKWALLS"[0m
+  [4;35;1mSQL (38.0ms)[0m   [0mDROP SEQUENCE "WICKWALLS_SEQ"[0m
+  [4;36;1mSQL (174.9ms)[0m   [0;1mCREATE TABLE "WICKWALLS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255), "LAST_TWEET" VARCHAR2(255), "LAST_TWEETED_AT" DATE) [0m
+  [4;35;1mSQL (69.0ms)[0m   [0mCREATE SEQUENCE "WICKWALLS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (526.6ms)[0m   [0;1mDROP TABLE "WOODPECKERS"[0m
+  [4;35;1mSQL (105.9ms)[0m   [0mDROP SEQUENCE "WOODPECKERS_SEQ"[0m
+  [4;36;1mSQL (122.9ms)[0m   [0;1mCREATE TABLE "WOODPECKERS" ("ID" NUMBER(38) NOT NULL PRIMARY KEY, "NAME" VARCHAR2(255)) [0m
+  [4;35;1mSQL (35.0ms)[0m   [0mCREATE SEQUENCE "WOODPECKERS_SEQ" START WITH 10000[0m
+  [4;36;1mSQL (37.0ms)[0m   [0;1mselect decode(table_name,upper(table_name),lower(table_name),table_name) from all_tables where owner = sys_context('userenv','session_user') and secondary='N'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT version FROM "SCHEMA_MIGRATIONS"[0m
+  [4;36;1mAkamaiTest::Hickwall Load (4.0ms)[0m   [0;1mSELECT * FROM "HICKWALLS" [0m
+  [4;35;1mAkamaiTest::Wickwall Load (3.0ms)[0m   [0mSELECT * FROM "WICKWALLS" [0m
+  [4;36;1mAkamaiTrackerTest::Hickwall Load (1.0ms)[0m   [0;1mSELECT * FROM "HICKWALLS" [0m
+  [4;35;1mAkamaiTrackerTest::Wickwall Load (1.0ms)[0m   [0mSELECT * FROM "WICKWALLS" [0m

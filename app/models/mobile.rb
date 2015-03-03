@@ -1,5 +1,6 @@
 class Mobile < ActiveRecord::Base
-	acts_as_audited
+	#acts_as_audited :on => [:update], :only => [:details]
+	track_this_model :only => [:details]
 	belongs_to :contact
 	before_validation :strip_whitespace
 
@@ -7,3 +8,4 @@ class Mobile < ActiveRecord::Base
   		self.details = self.details.strip
 	end
 end
+

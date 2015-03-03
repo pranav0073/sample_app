@@ -8,116 +8,92 @@
 			<p class = "right-assign">
 				<button type="button" class="btn btn-primary btn-lg fixed" data-toggle="modal" data-target="#myModal">
 				Add Connections
-			</button>
-
+				</button>
+			</p>
 			<%= render 'contacts/modal_moreConnection'%>
-
-		<div class="field">
-		<%= f.label :name %><br />
-		<%= f.text_field :name %>
-	</div>
-	 <strong><p><h3>Mobiles</h3></p></strong>
-	<div class="fields">
-		
-		<% f.fields_for :mobiles do |builder| %>
-			<div class ="fields">
-				<%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]], :selected => builder.object[:mtype])  %>
-				<%= builder.text_field :details %>
-				<%= link_to_remove_fields "remove", builder%>
-				</br>
+			<div class="field">
+				<%= f.label :name %><br />
+				<%= f.text_field :name %>
 			</div>
-
-		<% end %>
-			<%= link_to_add_fields "Add more", f, :mobiles%>
-		
-
-	</div><!-- -div ends -->
-	 <strong><p><h3>Emails</h3></p></strong>
-	<div class="fields">
-		
-		<% f.fields_for :emails do |builder| %>
-			<div class ="fields">
-				<%= builder.text_field :address %>
-				<%= builder.hidden_field :_destroy %>
-				<%= link_to_remove_fields "remove", builder%>
-				</br>
-			</div>
-		<% end %>
-		<%= link_to_add_fields "Add more", f, :emails%>
-	</div>
-
- <strong><p><h3>Connections</h3></p></strong>
-	<span id="facebook-field" >
-		<p class = "fields">
-			<%= f.label :fb, 'Facebook' %><br />
-			<%= f.text_field :fb %>
-			<%= link_to_function "remove","fbremove()",:id=>"fb-remove"%>
-		</p>
-	</span>
-	<script>
-		jQuery('#facebook-field').hide();
-	</script>
-
-	<span id="twitter-field" >
-		<p class = "fields">
-			<%= f.label :twitter, 'Twitter' %><br />
-			<%= f.text_field :twitter %>
-			<%= link_to_function "remove","twremove()",:id=>"fb-remove"%>
-		</p>
-	</span>
-	<script>
-	 jQuery('#twitter-field').hide();
-	</script>
-
-	<span id="google-field" >
-		<p class = "fields">
-			<%= f.label :google_plus, 'Google +' %><br />
-			<%= f.text_field :google_plus %>
-			<%= link_to_function "remove","glremove()",:id=>"fb-remove"%>
-		</p>
-	</span>
-	<script>
-	 jQuery('#google-field').hide();
-	</script>
-
-	<span id="github-field" >
-		<p class = "fields">
-			<%= f.label :github, 'Github' %><br />
-			<%= f.text_field :github %>
-			<%= link_to_function "remove","gitremove()",:id=>"fb-remove"%>
-		</p>
-	</span>
-	<script>
-	 jQuery('#github-field').hide();
-	</script>
-
-	<div class="fields hiddenOther">
-			<% count = 0%>
-				<% f.fields_for :other_connections do |builder| %>
-						<div class ="fields">
-						<% count = count+1%>
-							<%= builder.label :connection_type,"Tag"%>
-							<%= builder.text_field :connection_type %>
-							<%= builder.hidden_field :_destroy %>
-							<%= builder.label :connection_details,"Detail"%>
-							<%= builder.text_field :connection_detail %>
-							<%= link_to_remove_fields "remove", builder%>
-							</br>
-						</div>
+	 		<strong><p><h3>Mobiles</h3></p></strong>
+			<div class="fields">		
+				<% f.fields_for :mobiles do |builder| %>
+				<div class ="fields">
+					<%= builder.select :mtype,options_for_select([["HOME", "HOME"], ["WORK", "WORK"],["OTHER", "OTHER"]], :selected => builder.object[:mtype])  %>
+					<%= builder.text_field :details %>
+					<%= link_to_remove_fields "remove", builder%>
+					</br>
+				</div>
 				<% end %>
-				
+				<%= link_to_add_fields "Add more", f, :mobiles%>
+			</div><!-- -div ends -->
+	 		<strong><p><h3>Emails</h3></p></strong>
+			<div class="fields">
+				<% f.fields_for :emails do |builder| %>
+				<div class ="fields">
+					<%= builder.text_field :address %>
+					<%= builder.hidden_field :_destroy %>
+					<%= link_to_remove_fields "remove", builder%>
+					</br>
+				</div>
+				<% end %>
+				<%= link_to_add_fields "Add more", f, :emails%>
+			</div>
+			<strong><p><h3>Connections</h3></p></strong>
+			<span id="facebook-field" >
+				<p class = "fields">
+					<%= f.label :fb, 'Facebook' %><br />
+					<%= f.text_field :fb %>
+					<%= link_to_function "remove","fbremove()",:id=>"fb-remove"%>
+				</p>
+			</span>
+			<script>jQuery('#facebook-field').hide();</script>
+			<span id="twitter-field" >
+				<p class = "fields">
+					<%= f.label :twitter, 'Twitter' %><br />
+					<%= f.text_field :twitter %>
+					<%= link_to_function "remove","twremove()",:id=>"fb-remove"%>
+				</p>
+			</span>
+			<script>jQuery('#twitter-field').hide();</script>
+			<span id="google-field" >
+				<p class = "fields">
+					<%= f.label :google_plus, 'Google +' %><br />
+					<%= f.text_field :google_plus %>
+					<%= link_to_function "remove","glremove()",:id=>"fb-remove"%>
+				</p>
+			</span>
+			<script>jQuery('#google-field').hide();</script>
+			<span id="github-field" >
+				<p class = "fields">
+					<%= f.label :github, 'Github' %><br />
+					<%= f.text_field :github %>
+					<%= link_to_function "remove","gitremove()",:id=>"fb-remove"%>
+				</p>
+			</span>
+			<script>jQuery('#github-field').hide();</script>
+			<div class="fields hiddenOther">
+				<% count = 0%>
+				<% f.fields_for :other_connections do |builder| %>
+					<div class ="fields">
+						<% count = count+1%>
+						<%= builder.label :connection_type,"Tag"%>
+						<%= builder.text_field :connection_type %>
+						<%= builder.hidden_field :_destroy %>
+						<%= builder.label :connection_details,"Detail"%>
+						<%= builder.text_field :connection_detail %>
+						<%= link_to_remove_fields "remove", builder%>
+						</br>
+					</div>
+				<% end %>
 				<%= link_to_add_fields "Add other connections", f, :other_connections%>
-				
+			</div>
+			<div class="actions">
+				<%= f.submit "Save Changes" %>
+			</div>
+			<% end %>
+			<%= javascript_include_tag "custom"%>
+		</div>
+		<div class = "col-md-2"></div>
 	</div>
-	<script>
-		 
-	</script>
-
-	<div class="actions">
-		<%= f.submit "Save Changes" %>
-	</div>
-<% end %>
-<%= javascript_include_tag "custom"%>
-</div>
-<div class = "col-md-2"></div>
 </div>
