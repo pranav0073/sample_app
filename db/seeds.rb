@@ -15,6 +15,7 @@
 require 'faker'
 require 'populator'
 
+#Tracker.connection.execute "ALTER TABLE trackers AUTO_INCREMENT=1"
 User.delete_all
 Phonebook.delete_all
 Contact.delete_all
@@ -95,5 +96,6 @@ cont.each do |x|
 
 	end
 end
+
 
 

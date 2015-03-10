@@ -30,21 +30,18 @@ class PhonebooksController < ApplicationController
   end
 
   def prepend0
-    @contacts = current_user.phonebook.contacts
-    size = @contacts.size
-    (1..size).each do |i|
-      contactId = @contacts[i-1].id
-      #for each contactId extract the numbers associated
-      @mobiles = Mobile.all(:select =>"details, id", :conditions => ["contact_id=?",[contactId]])
-      msize = @mobiles.size
-      (1..msize).each do |j|
-        detailValue = @mobiles[j-1].details
-        mobileId = @mobiles[j-1].id
-        detailValue = "0#{detailValue}"
-        Mobile.update(mobileId, :details => detailValue)
+      #Tracker.delete_all
+      redirect_to phonebook_path
+      ActiveRecord::Base.transaction do
+        @contacts = current_user.phonebook.contacts
+        @contacts.each do |contact| 
+          contact.mobiles.each do |mobile|
+            mobile.details = "0#{mobile.details}"
+            mobile.save
+          end
+        end
       end
-     # Mobile.update_all({:details => "chanfew"}, {:contact_id => contactId})
-    end
-    redirect_to phonebook_path
+      
+    
   end
 end

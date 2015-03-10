@@ -23,13 +23,14 @@ module Akamai #:nodoc:
               'created_at', 'updated_at', 'created_on', 'updated_on']
             except |= Array(options[:except]).collect(&:to_s) if options[:except]
           end
+          
           write_inheritable_attribute :non_audited_columns, except
           write_inheritable_attribute :auditing_enabled, true
           has_many :trackers, :as => :auditable
           attr_protected :audit_ids if options[:protect]
           Tracker.audited_class_names << self.to_s
           after_create  :track_create if !options[:on] || (options[:on] && options[:on].include?(:create))
-          before_update :track_update if !options[:on] || (options[:on] && options[:on].include?(:update))
+          after_update  :track_update if !options[:on] || (options[:on] && options[:on].include?(:update))
           after_destroy :track_destroy if !options[:on] || (options[:on] && options[:on].include?(:destroy))
           attr_accessor :version
           include Akamai::Acts::Track::InstanceMethods
@@ -67,7 +68,9 @@ module Akamai #:nodoc:
             attrs[:column_name] = key
             attrs[:old_value] = array[0]
             attrs[:new_value] = array[1]
-            self.trackers.create attrs if auditing_enabled
+            ActiveRecord::Base.transaction do  
+              self.trackers.create attrs if auditing_enabled
+            end
           end
         end
         def write_audit_for_create(attrs)
