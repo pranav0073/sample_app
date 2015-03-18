@@ -1,9 +1,10 @@
-class <%= class_name %> < ActiveRecord::Migration
+class AddTrackersTable < ActiveRecord::Migration
   def self.up
     create_table :trackers, :force => true do |t|
       t.column :auditable_id, :integer
       t.column :auditable_type, :string
       t.column :user_id, :integer
+      t.column :user_type, :string
       t.column :name, :string
       t.column :action, :string
       t.column :created_at, :datetime

@@ -30,6 +30,14 @@ class User < ActiveRecord::Base
 
 	before_save :encrypt_password
 
+	# def self.current
+ #    	Thread.current[:user]
+ #  	end
+  	
+ #  	def self.current=(user)
+ #    	Thread.current[:user] = user
+ #  	end
+
 	#return true if the user's password matches the submitted password
 	def has_password?(submitted_password)
 		#compare encrypted password with the encruypted version

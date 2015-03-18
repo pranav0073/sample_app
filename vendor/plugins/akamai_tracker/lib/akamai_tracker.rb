@@ -1,5 +1,3 @@
-# AkamaiTracker
-
 
 module Akamai #:nodoc:
   module Acts #:nodoc:
@@ -14,7 +12,7 @@ module Akamai #:nodoc:
           return if self.included_modules.include?(Akamai::Acts::Track::InstanceMethods)
           options = {:protect => accessible_attributes.nil?}.merge(options)
           class_inheritable_reader :non_audited_columns
-          class_inheritable_reader :auditing_enabled
+          
           
           if options[:only]
             except = self.column_names - options[:only].flatten.map(&:to_s)
@@ -52,7 +50,9 @@ module Akamai #:nodoc:
         end
         def track_update
           unless (changes = audited_changes).empty?
-            write_audit_for_update_or_destroy(:action => 'update', :changes => changes)
+            #get updated_by
+            #Tracker.current = details if details
+            write_audit_for_update(:action => 'update', :changes => changes)
           end
         end
         def track_destroy
@@ -61,7 +61,7 @@ module Akamai #:nodoc:
         def write_audit(attrs)
           self.trackers.create attrs if auditing_enabled
         end
-        def write_audit_for_update_or_destroy(attrs)
+        def write_audit_for_update(attrs)
           temp = attrs[:changes]
           attrs.except!(:changes)
           temp.each do |key, array|
@@ -69,7 +69,7 @@ module Akamai #:nodoc:
             attrs[:old_value] = array[0]
             attrs[:new_value] = array[1]
             ActiveRecord::Base.transaction do  
-              self.trackers.create attrs if auditing_enabled
+              self.trackers.create attrs 
             end
           end
         end
@@ -80,7 +80,9 @@ module Akamai #:nodoc:
             attrs[:column_name] = key.to_s
             attrs[:old_value] = ""
             attrs[:new_value] = val_f
-            self.trackers.create attrs if auditing_enabled
+            ActiveRecord::Base.transaction do  
+              self.trackers.create attrs 
+            end 
           end
         end
         def write_audit_for_destroy(attrs)
@@ -90,10 +92,27 @@ module Akamai #:nodoc:
             attrs[:column_name] = key.to_s
             attrs[:old_value] = val_f
             attrs[:new_value] = ""
-            self.trackers.create attrs if auditing_enabled
+            ActiveRecord::Base.transaction do  
+              self.trackers.create attrs 
+            end 
           end
         end
       end # InstanceMethods
     end
   end
 end
+
+
+module Akamai
+  module Track
+    module Setup 
+      def self.included(base)
+        base.before_filter :set_current_user
+      end
+      def set_current_user
+        Tracker.current = current_user
+      end
+    end
+  end
+end
+

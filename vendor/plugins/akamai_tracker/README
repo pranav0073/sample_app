@@ -1,13 +1,64 @@
 AkamaiTracker
 =============
 
-Introduction goes here.
+To audit changes in your model 
 
+
+Setup
+======
+
+1)run
+	./script/generate akamai_tracker add_trackers_table
+
+This command will create a trackers table where all the changes will be audited
+
+
+2)copy these lines in config/development or /production
+
+		class Tracker < ActiveRecord::Base                                           
+		end                                                                           
+		Tracker.logger = nil    
+
+The idea is to turn off the sql logging of trackers table. This significantly imporves the 
+performance over 5sec
+
+3)Include this module in appcliacteion_controller.rb under controllers
+	
+	include Akamai::Track::Setup
 
 Example
 =======
 
 Example goes here.
+
+consider a model Mobile with attributes "details" and "mtype"
+
+Ex:1 =>
+class Mobile
+	track_this_model :only => [:details, :mtype], :on => [:update,:destroy]
+end
+
+Now any time if a record is updated or destroyed and there is a change in value of either attributes or both, corresponding new record will be inserted in trackers table
+with old and previous value along with the user info who did the changes.
+
+
+Ex:2 =>
+class Mobile
+	track_this_model :except => [:details], :on => [:create]
+end
+
+self explanatory
+
+
+Generic info
+=============
+1)plugin offers three callbacks  = :update, :destroy and :update if mothing is specified auditing will happen on all these callbacks
+
+2)if no specific columns are mentioned then auditing will happen for all the attributes
+
+
+
+
 
 
 Copyright (c) 2015 [name of plugin creator], released under the MIT license

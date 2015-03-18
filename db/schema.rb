@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20150302080755) do
+ActiveRecord::Schema.define(:version => 20150317061833) do
 
   create_table "aq$_internet_agent_privs", :id => false, :force => true do |t|
     t.string "agent_name",  :limit => 30, :null => false
@@ -56,7 +56,6 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
     t.string   "column_name"
     t.string   "old_value"
     t.string   "new_value"
-    t.string   "name"
   end
 
   add_index "audits", ["auditable_id", "auditable_type"], :name => "auditable_index"
@@ -73,6 +72,16 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
     t.string   "github"
     t.string   "google_plus"
   end
+
+  create_table "conversations", :force => true do |t|
+    t.integer  "sender_id",    :precision => 38, :scale => 0
+    t.integer  "recipient_id", :precision => 38, :scale => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "conversations", ["recipient_id"], :name => "i_conversations_recipient_id"
+  add_index "conversations", ["sender_id"], :name => "i_conversations_sender_id"
 
 # Could not dump table "def$_aqcall" because of following StandardError
 #   Unknown type 'RAW' for column 'msgid'
@@ -131,12 +140,6 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
     t.string  "topic", :limit => 50, :null => false
     t.decimal "seq",                 :null => false
     t.string  "info",  :limit => 80
-  end
-
-  create_table "hickwalls", :force => true do |t|
-    t.string   "name"
-    t.string   "last_squawk"
-    t.datetime "last_squawked_at"
   end
 
   create_table "logmnr_age_spill$", :id => false, :force => true do |t|
@@ -1216,7 +1219,7 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
     t.datetime "updated_at"
     t.string   "connection_type"
     t.string   "connection_detail"
-    t.string   "contact_id"
+    t.integer  "contact_id",        :precision => 38, :scale => 0
     t.string   "tag"
     t.string   "details"
   end
@@ -1696,18 +1699,17 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
     t.string   "auditable_type"
     t.integer  "user_id",        :precision => 38, :scale => 0
     t.string   "user_type"
-    t.string   "username"
+    t.string   "name"
     t.string   "action"
-    t.integer  "version",        :precision => 38, :scale => 0, :default => 0
     t.datetime "created_at"
     t.string   "column_name"
     t.string   "old_value"
     t.string   "new_value"
   end
 
-  add_index "trackers", ["auditable_id", "auditable_type"], :name => "auditable_tracker_index"
+  add_index "trackers", ["auditable_id", "auditable_type"], :name => "track_auditable_index"
   add_index "trackers", ["created_at"], :name => "index_trackers_on_created_at"
-  add_index "trackers", ["user_id", "user_type"], :name => "user_tracker_index"
+  add_index "trackers", ["user_id", "user_type"], :name => "track_user_index"
 
   create_table "users", :force => true do |t|
     t.string   "name"
@@ -1721,16 +1723,6 @@ ActiveRecord::Schema.define(:version => 20150302080755) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
-
-  create_table "wickwalls", :force => true do |t|
-    t.string   "name"
-    t.string   "last_tweet"
-    t.datetime "last_tweeted_at"
-  end
-
-  create_table "woodpeckers", :force => true do |t|
-    t.string "name"
-  end
 
   add_synonym "syscatalog", "sys.syscatalog", :force => true
   add_synonym "catalog", "sys.catalog", :force => true
