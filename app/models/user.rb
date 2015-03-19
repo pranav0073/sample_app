@@ -29,25 +29,13 @@ class User < ActiveRecord::Base
 	validates_uniqueness_of :email, :case_sensitive =>false
 
 	before_save :encrypt_password
-
-	# def self.current
- #    	Thread.current[:user]
- #  	end
-  	
- #  	def self.current=(user)
- #    	Thread.current[:user] = user
- #  	end
-
-	#return true if the user's password matches the submitted password
 	def has_password?(submitted_password)
-		#compare encrypted password with the encruypted version
-		#of submitted password
 		encrypted_password == encrypt(submitted_password)
 	end
 
 	def remember_me!
 		self.remember_token = encrypt("#{salt}--#{id}--#{Time.now.utc}")
-    save_without_validation
+    	save_without_validation
 	end
 	def self.authenticate(email, submitted_password)
 		user = find_by_email(email)
